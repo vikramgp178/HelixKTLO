@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Data Driven Test]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="extentlisteners.ExtentListeners"/>
+    <listener class-name="extentlisteners.CustomListeners"/>
+  </listeners>
+  <test thread-count="5" name="Sanity Test(failed)">
+    <classes>
+      <class name="testcases.SanityTest">
+        <methods>
+          <include name="sanityTest" invocation-numbers="1 2 3 4 5 6"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.SanityTest -->
+      <class name="testcases.V2E_Tests">
+        <methods>
+          <include name="sampleTest" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcases.V2E_Tests -->
+    </classes>
+  </test> <!-- Sanity Test(failed) -->
+</suite> <!-- Failed suite [Data Driven Test] -->

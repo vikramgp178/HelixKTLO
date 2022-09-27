@@ -49,7 +49,7 @@ public class ExtentListeners implements ITestListener {
 	public static ExtentTest test;
 
 	public void onTestStart(ITestResult result) {
-		System.out.println("extent "+result);
+		//System.out.println("extent "+result);
 
 		String param = (String) result.getParameters()[0];
 		test = extent.createTest("V2E Application : "+result.getTestClass().getName() + " For Site: "+ " - " + param);
@@ -70,8 +70,12 @@ public class ExtentListeners implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 
-		// ReportNG
-		ExtentManager.captureScreenshot();
+		try{// ReportNG
+			ExtentManager.captureScreenshot();
+			}
+			catch (Exception e) {
+				System.out.println("Exception : "+e);
+			}
 
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
 		Reporter.log("<a href=" + ExtentManager.srcfileName + " target=\"_blank\">Screenshot link</a>");

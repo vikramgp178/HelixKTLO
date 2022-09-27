@@ -49,11 +49,7 @@ public class UK_PrivacyGuard extends BasePage{
 		myAccount.click();
 	}
 	
-	public void ClickGooglebtn() {
-		//myAccount.click();
-		googleSearchbtn.click();
-	}
-	
+		
 	public String  getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}

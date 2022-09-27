@@ -13,7 +13,8 @@ public class DataUtil extends BaseTest {
 		String sheetName = m.getName();
 		int rowCount = excel.getRowCount(sheetName);
 		int colCount = excel.getColumnCount(sheetName);
-	
+//		System.out.println("SheetName"+sheetName + rowCount+" "+colCount);
+
 		Object[][] data = new Object[rowCount-1][colCount];
 	
 		
@@ -22,6 +23,7 @@ public class DataUtil extends BaseTest {
 			for(int cols=0; cols<colCount; cols++) {
 				
 				data[rows-2][cols]=excel.getCellData(sheetName, cols, rows);
+				//System.out.println("Data provider :"+data[rows-2][cols]);
 				
 			}
 			

@@ -9,15 +9,15 @@ import base.BaseTest;
 import pages.UK.UK_PrivacyGuard;
 import utilities.DataUtil;
 
-public class V2E_Tests extends BaseTest{
+public class ProdSanityTest extends BaseTest{
 	
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp")
-	public void sampleTest(String url,String browsername) {
-		System.out.println("browser :"+browsername+" and url is: "+url);
+	public void prodSanityTest(String url,String browsername,String title, String runmode) {
+		//System.out.println("browser :"+browsername+" and url is: "+url);
+		checkRunmode(runmode);
 		setUp(browsername,url);
-		UK_PrivacyGuard home= new UK_PrivacyGuard(driver);
-		home.ClickGooglebtn();
-		Assert.assertEquals(1, 0);
+		Assert.assertEquals(getPageTitle(),title);
+		tearDown();
 	}
 
 }

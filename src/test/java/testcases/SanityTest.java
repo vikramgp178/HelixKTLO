@@ -50,24 +50,23 @@ public class SanityTest extends BaseTest {
 		if (applicationName.equals("My Credit Monitor")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("My Credit Monitor");
 			UK_MyCreditMonitor home = new UK_MyCreditMonitor(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
 			checkBrokenlinks(url);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "xx");
 			home.LogoutFromAccount();
 
 		} else if (applicationName.equals("Privacy Guard UK")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("Privacy Guard UK");
+			//System.out.println("Privacy Guard UK");
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
+			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
@@ -75,12 +74,12 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("Manage my credit")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("Privacy Guard UK");
+			//System.out.println("Privacy Guard UK");
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
+			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
@@ -88,12 +87,12 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("Identity Secure")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("Privacy Guard UK");
+			///System.out.println("Privacy Guard UK");
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
+			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
@@ -101,12 +100,12 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("(Vanquis) Credit Tracker Identiy")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("Privacy Guard UK");
+		//	System.out.println("Privacy Guard UK");
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
+		//	System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
@@ -114,12 +113,12 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("My Credit Tracker")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("Privacy Guard UK");
+			//System.out.println("Privacy Guard UK");
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
+			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
@@ -127,12 +126,12 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("American Express Identity Defence")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-			System.out.println("Privacy Guard UK");
+			//System.out.println("Privacy Guard UK");
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
-			System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
+			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();

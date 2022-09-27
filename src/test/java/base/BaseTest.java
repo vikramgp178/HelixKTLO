@@ -24,6 +24,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.DbManager;
@@ -47,7 +48,7 @@ public class BaseTest {
 
 	public void setUp(String browserName, String url) {
 
-		System.out.println("Browsername=" + browserName + " and URL :" + url);
+		//System.out.println("Browsername=" + browserName + " and URL :" + url);
 		PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
 
 		try {
@@ -86,17 +87,26 @@ public class BaseTest {
 		}
 
 		// DriverManager.setWebDriver(driver);
-		System.out.println("URL found :" + url);
-		driver.get(url);
-		log.info("Navigating to the URL : " + url);
-		DbManager.setMysqlDbConnection();
-		log.info("Database connection established");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Integer.parseInt(Config.getProperty("implicit.wait")),
-				TimeUnit.SECONDS);
+		//System.out.println("URL found :" + url);
+		
+		try {
+			driver.get(url);
+			log.info("Navigating to the URL : " + url);
+			DbManager.setMysqlDbConnection();
+			log.info("Database connection established");
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(Integer.parseInt(Config.getProperty("implicit.wait")),
+					TimeUnit.SECONDS);
 
-		wait = new WebDriverWait(driver, Integer.parseInt(Config.getProperty("explicit.wait")));
+			wait = new WebDriverWait(driver, Integer.parseInt(Config.getProperty("explicit.wait")));
 
+		}
+		catch(Exception e) {
+			System.out.println("Site open issue : "+e);
+		}
+		
+		
+		
 	}
 
 	public void checkRunmode(String runmode) {
@@ -104,6 +114,26 @@ public class BaseTest {
 
 			throw new SkipException("Skipping the test as the run mode is NO");
 		}
+	}
+	
+	public String getPageTitle() {
+		//myAccount.click();
+		//googleSearchbtn.click();
+		return driver.getTitle();
+		}
+	
+	public void checkSoftAsserEqual(String actual,String expected) {
+		SoftAssert sf= new SoftAssert();
+		sf.assertEquals(actual, expected);
+        sf.assertAll();
+		//driver.quit();
+
+
+		
+	}
+	
+	public void SampleMethod() {
+		System.out.println("Test completed");
 	}
 
 	public void checkBrokenlinks(String url) {

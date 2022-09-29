@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.ES.ES_DisfrutayAhorra;
 import pages.ES.ES_Ocioneo;
 import pages.UK.UK_AmericanExpressIdentityDefence;
 import pages.UK.UK_CreditTrackerIdentiy_Vanquis;
@@ -233,7 +234,7 @@ public class SanityTest extends BaseTest {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			ES_DisfrutayAhorra home = new ES_DisfrutayAhorra(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();

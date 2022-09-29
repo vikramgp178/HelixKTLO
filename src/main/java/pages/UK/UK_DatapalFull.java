@@ -4,32 +4,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-
 import base.BasePage;
 
-public class UK_IdentitySecure extends BasePage {
+public class UK_DatapalFull extends BasePage {
 
-	public UK_IdentitySecure(WebDriver driver) {
+	public UK_DatapalFull(WebDriver driver) {
 		super(driver);
-// TODO Auto-generated constructor stub
+		// TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id = "username")
+	@FindBy(name = "signin_username")
 	private WebElement username;
 
-	@FindBy(id = "password")
+	@FindBy(name = "signin_password")
 	private WebElement password;
 
-	@FindBy(css = "input[title='Sign in']")
+	@FindBy(css = "form[role='form'] > button[name='signin_submit']")
 	private WebElement loginBtn;
 
-	@FindBy(css = "a#myaccount > span")
+	@FindBy(css = ".list-inline.list-unstyled.member.pull-right > li:nth-of-type(3) > .track-event")
 	private WebElement myAccount;
 
-	@FindBy(css = "div:nth-of-type(2) > p > strong")
+	@FindBy(css = "div#accordion > div:nth-of-type(3) > .form-control")
 	private WebElement currentEmailAddress;
 	
-	@FindBy(css="a[title='Sign out'] > span")
+	@FindBy(css="a[title='Log out'] > .glyphicon.glyphicon-remove")
 	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {
@@ -43,12 +42,12 @@ public class UK_IdentitySecure extends BasePage {
 	}
 
 	public String getCurrentEmailID() {
-		return currentEmailAddress.getText();
+		return currentEmailAddress.getAttribute("value");
 	}
 	
 	public void LogoutFromAccount() {
 		logout.click();
 	}
 
-	
+
 }

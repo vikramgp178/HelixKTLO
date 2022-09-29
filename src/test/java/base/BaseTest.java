@@ -95,9 +95,11 @@ public class BaseTest {
 			DbManager.setMysqlDbConnection();
 			log.info("Database connection established");
 			driver.manage().window().maximize();
+		/*	System.out.println("Config.getProperty(\"implicit.wait\") :"+Config.getProperty("implicit.wait"));
+			System.out.println("Config.getProperty(\"explicit.wait\") :"+Config.getProperty("explicit.wait"));*/
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(Config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-
+			//wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 			wait = new WebDriverWait(driver, Integer.parseInt(Config.getProperty("explicit.wait")));
 
 		}

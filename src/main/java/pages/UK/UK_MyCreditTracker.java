@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-
 import base.BasePage;
 
-public class UK_IdentitySecure extends BasePage {
+public class UK_MyCreditTracker extends BasePage {
 
-	public UK_IdentitySecure(WebDriver driver) {
+	public UK_MyCreditTracker(WebDriver driver) {
 		super(driver);
 // TODO Auto-generated constructor stub
 	}
@@ -45,10 +44,8 @@ public class UK_IdentitySecure extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}
-
-	
 }

@@ -1,7 +1,7 @@
 package testcases;
 
 public class ArrayTest {
-// this is my comment
+//comment by vikram
 	public static int z =100;
 	public final static int q=300;
 	public static void main(String[] args) {

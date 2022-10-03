@@ -8,12 +8,12 @@
   </listeners>
   <test thread-count="5" name="Sanity Test(failed)">
     <classes>
-      <class name="testcases.SanityTest">
+      <class name="testcases.PreProd1BTest">
         <methods>
-          <include name="sanityTest" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
           <include name="tearDown"/>
+          <include name="preProd1bTest" invocation-numbers="1 2 3 4 5"/>
         </methods>
-      </class> <!-- testcases.SanityTest -->
+      </class> <!-- testcases.PreProd1BTest -->
     </classes>
   </test> <!-- Sanity Test(failed) -->
 </suite> <!-- Failed suite [Data Driven Test] -->

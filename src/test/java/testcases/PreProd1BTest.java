@@ -18,8 +18,9 @@ public class PreProd1BTest extends BaseTest {
 		    setUp(browsername,url);
 			//Assert.assertEquals(actual,expected);
 		    checkSoftAsserEqual(getPageTitle(),title);
+		    tearDown();
 			//SampleMethod();
-			System.out.println("assert done");
+			//System.out.println("assert done");
 	
 		}else if(runmode.equals("N")) {
 		     throw new SkipException("Test iteration is Skipped as Runmode is :"+runmode);

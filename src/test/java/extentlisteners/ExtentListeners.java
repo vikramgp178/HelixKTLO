@@ -27,11 +27,10 @@ import base.BasePage;
 import base.BaseTest;
 import utilities.DriverManager;
 
-
 public class ExtentListeners implements ITestListener {
-
-
 	
+	String logText=null;
+
 	/*
 	 * public WebDriver driver;
 	 * 
@@ -49,14 +48,13 @@ public class ExtentListeners implements ITestListener {
 	public static ExtentTest test;
 
 	public void onTestStart(ITestResult result) {
-		//System.out.println("extent "+result);
+		// System.out.println("extent "+result);
 
 		String param = (String) result.getParameters()[0];
-		test = extent.createTest("V2E Application : "+result.getTestClass().getName() + " For Site: "+ " - " + param);
+		test = extent
+				.createTest("V2E Application : " + result.getTestClass().getName() + " For Site: " + " - " + param);
 
 	}
-	
-
 
 	public void onTestSuccess(ITestResult result) {
 
@@ -66,30 +64,27 @@ public class ExtentListeners implements ITestListener {
 		test.pass(m);
 
 	}
-	
 
 	public void onTestFailure(ITestResult result) {
 
-		try{// ReportNG
+		try {// ReportNG
 			ExtentManager.captureScreenshot();
-			}
-			catch (Exception e) {
-				System.out.println("Exception : "+e);
-			}
+			System.setProperty("org.uncommons.reportng.escape-output", "false");
+			Reporter.log("<a href=" + ExtentManager.srcfileName + " target=\"_blank\">Screenshot link</a>");
+			Reporter.log("<br>");
+			Reporter.log("<a href=" + ExtentManager.srcfileName + " target=\"_blank\"><img src="
+					+ ExtentManager.srcfileName + " height=200 width=200></a>");
 
-		System.setProperty("org.uncommons.reportng.escape-output", "false");
-		Reporter.log("<a href=" + ExtentManager.srcfileName + " target=\"_blank\">Screenshot link</a>");
-		Reporter.log("<br>");
-		Reporter.log(
-				"<a href=" + ExtentManager.srcfileName + " target=\"_blank\"><img src=" + ExtentManager.srcfileName + " height=200 width=200></a>");
+			//////////////////////////////////
 
-//////////////////////////////////
+			String excepionMessage = Arrays.toString(result.getThrowable().getStackTrace());
+			test.fail(excepionMessage);
 
-		String excepionMessage = Arrays.toString(result.getThrowable().getStackTrace());
-		test.fail(excepionMessage);
-
-		String methodName = result.getMethod().getMethodName();
-		String logText = "<b>" + "TestCase :- " + methodName.toUpperCase() + " Failed" + "</b>";
+			String methodName = result.getMethod().getMethodName();
+			String logText = "<b>" + "TestCase :- " + methodName.toUpperCase() + " Failed" + "</b>";
+		} catch (Exception e) {
+			System.out.println("Screenshot error occrued  : ");
+		}
 
 		try {
 
@@ -107,7 +102,7 @@ public class ExtentListeners implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
-		String logText = "<b>" + "TestCase:- " + methodName + " Skipped" + "</b>";
+		logText = "<b>" + "TestCase:- " + methodName + " Skipped" + "</b>";
 		Markup m = MarkupHelper.createLabel(logText, ExtentColor.YELLOW);
 		test.skip(m);
 

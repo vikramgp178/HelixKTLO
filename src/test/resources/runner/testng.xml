@@ -11,7 +11,7 @@
 	<test name="Sanity Test">
 		<classes>
 			<class name="testcases.SanityTest" />
-<!-- 			<class name="testcases.ProdSanityTest" />
+	<!-- 		<class name="testcases.ProdSanityTest" />
 			<class name="testcases.PreProd1BTest" /> -->
 			
 		</classes>

@@ -14,10 +14,12 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.DE.DE_Datapal1_5;
+import pages.DE.DE_DatapalMobilComm;
 import pages.DE.DE_Uniqa;
 import pages.ES.ES_Disfrutamaspormenos;
 import pages.ES.ES_DisfrutayAhorra;
 import pages.ES.ES_Ocioneo;
+import pages.ES.ES_Vitalisbienestar;
 import pages.UK.UK_AmericanExpressIdentityDefence;
 import pages.UK.UK_CreditTrackerIdentiy_Vanquis;
 import pages.UK.UK_DatapalFull;
@@ -285,7 +287,7 @@ public class SanityTest extends BaseTest {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			DE_DatapalMobilComm home = new DE_DatapalMobilComm(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
@@ -297,7 +299,7 @@ public class SanityTest extends BaseTest {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			ES_Vitalisbienestar home = new ES_Vitalisbienestar(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();

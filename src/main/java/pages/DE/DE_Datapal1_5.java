@@ -23,10 +23,10 @@ public class DE_Datapal1_5 extends BasePage {
 	@FindBy(css = "button[name='signin_submit']")
 	private WebElement loginBtn;
 
-	@FindBy(css = "pull-right > a:nth-of-type(1)")
+	@FindBy(css = ".col-md-12.hidden-sm.hidden-xs.secondary-nav.secondary-nav__member > div > a:nth-of-type(1)")
 	private WebElement myAccount;
 
-	@FindBy(css = "div#accordion > div:nth-of-type(3) > .form-control")
+	@FindBy(css = "div#accordion > div:nth-of-type(2) > .form-control")
 	private WebElement currentEmailAddress;
 	
 	@FindBy(css = ".col-md-12.hidden-sm.hidden-xs.secondary-nav.secondary-nav__member  a[title='Log out']")
@@ -43,7 +43,7 @@ public class DE_Datapal1_5 extends BasePage {
 	}
 
 	public String getCurrentEmailID() {
-		return currentEmailAddress.getText();
+		return currentEmailAddress.getAttribute("value");
 	}
 	
 	public void LogoutFromAccount() {

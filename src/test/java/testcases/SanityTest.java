@@ -266,7 +266,7 @@ public class SanityTest extends BaseTest {
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
 			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "UQ4000291093");
 			home.LogoutFromAccount();
 
 		}else if (applicationName.equals("Datapal 1.5")) {
@@ -278,7 +278,7 @@ public class SanityTest extends BaseTest {
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
 			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "4009372791");
 			home.LogoutFromAccount();
 
 		}else if (applicationName.equals("Datapal MobilComm")) {

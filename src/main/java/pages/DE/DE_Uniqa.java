@@ -26,7 +26,7 @@ public class DE_Uniqa extends BasePage {
 	@FindBy(css = ".pull-right > a:nth-of-type(1)")
 	private WebElement myAccount;
 
-	@FindBy(css = "div#accordion > div:nth-of-type(3) > .form-control")
+	@FindBy(css = "div#accordion > div:nth-of-type(2) > .form-control")
 	private WebElement currentEmailAddress;
 
 	@FindBy(css = "div:nth-of-type(1) a[title='Log out']")
@@ -43,7 +43,7 @@ public class DE_Uniqa extends BasePage {
 	}
 
 	public String getCurrentEmailID() {
-		return currentEmailAddress.getText();
+		return currentEmailAddress.getAttribute("value");
 	}
 	
 	public void LogoutFromAccount() {

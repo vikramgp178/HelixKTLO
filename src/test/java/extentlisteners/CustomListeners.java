@@ -40,7 +40,7 @@ public class CustomListeners implements ITestListener{
         // TODO Auto-generated method stub				
     	
 		try {
-			ins = new FileInputStream("C:\\Users\\VikramPhatangare\\Downloads\\20220822_220656.jpg");
+			ins = new FileInputStream("C:\\Users\\ShreyasShendge\\Downloads\\20220822_220656.jpg");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

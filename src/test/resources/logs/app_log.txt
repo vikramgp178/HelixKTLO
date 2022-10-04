@@ -1,6 +1,6 @@
-INFO    2022-10-03 11:59:03,339 [main] base.BaseTest  - Config Properties loaded !!!
-INFO    2022-10-03 12:00:10,605 [main] base.BaseTest  - Chrome Browser Launched !!!
-INFO    2022-10-03 12:00:16,083 [main] base.BaseTest  - Navigating to the URL : https://pguk-hx.ie1.Prod1b.affiniongroup.com/?ref=UKAMXSTDFLT0001
-INFO    2022-10-03 12:00:20,794 [main] base.BaseTest  - Database connection established
-INFO    2022-10-03 12:00:21,723 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-03 12:00:21,729 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-04 11:09:58,593 [main] base.BaseTest  - Config Properties loaded !!!
+INFO    2022-10-04 11:11:04,111 [main] base.BaseTest  - Chrome Browser Launched !!!
+INFO    2022-10-04 11:11:49,423 [main] base.BaseTest  - Navigating to the URL : https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=dOWpy%2beeQY3IYNaEhm0ALw%3d%3d
+INFO    2022-10-04 11:11:49,425 [main] base.BaseTest  - Database connection established
+INFO    2022-10-04 11:13:30,943 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-04 11:13:32,968 [main] base.BaseTest  - Test Execution completed !!!

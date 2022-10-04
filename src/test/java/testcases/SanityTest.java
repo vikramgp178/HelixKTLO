@@ -13,6 +13,9 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.DE.DE_Datapal1_5;
+import pages.DE.DE_Uniqa;
+import pages.ES.ES_Disfrutamaspormenos;
 import pages.ES.ES_DisfrutayAhorra;
 import pages.ES.ES_Ocioneo;
 import pages.UK.UK_AmericanExpressIdentityDefence;
@@ -246,7 +249,7 @@ public class SanityTest extends BaseTest {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			ES_Disfrutamaspormenos home = new ES_Disfrutamaspormenos(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
@@ -258,7 +261,7 @@ public class SanityTest extends BaseTest {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			DE_Uniqa home = new DE_Uniqa(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
@@ -270,7 +273,7 @@ public class SanityTest extends BaseTest {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			DE_Datapal1_5 home = new DE_Datapal1_5(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();

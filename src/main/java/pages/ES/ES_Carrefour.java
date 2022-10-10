@@ -7,30 +7,42 @@ import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
 
-public class ES_AurumVitalis extends BasePage {
+public class ES_Carrefour extends BasePage {
 
-	public ES_AurumVitalis(WebDriver driver) {
+	public ES_Carrefour(WebDriver driver) {
 		super(driver);
 // TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id = "signin_username")
+	@FindBy(id = "UserName")
 	private WebElement username;
 
-	@FindBy(id = "signin_password")
+	@FindBy(id = "password")
 	private WebElement password;
 
-	@FindBy(css = "button[name='signin_submit']")
+	@FindBy(css = "input[title='Sign in']")
 	private WebElement loginBtn;
 
-	@FindBy(css = ".fs14.loggedin.pull-left > .list-inline-logged > li:nth-of-type(1) > a")
+	@FindBy(id = "SL_place1")
+	private WebElement passcode1;
+
+	@FindBy(id = "SL_place2")
+	private WebElement passcode2;
+
+	@FindBy(id = "SL_place3")
+	private WebElement passcode3;
+
+	@FindBy(css = "input[name='secondaryLogon_submit']")
+	private WebElement enterPasscode;
+
+	@FindBy(css = "ul#leftNav  a[title='Mi Perfil']")
 	private WebElement myAccount;
 
-	@FindBy(css = "input#Email")
+	@FindBy(css = "input#email")
 	private WebElement currentEmailAddress;
 
-    @FindBy(css = ".logout > a[title='Log out']")
-    private WebElement logout;
+	@FindBy(css = "a[title='Desconectar']")
+	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {
 		username.sendKeys(uName);
@@ -42,10 +54,14 @@ public class ES_AurumVitalis extends BasePage {
 		myAccount.click();
 	}
 
+	public void verifyPasscode() {
+		myAccount.click();
+	}
+
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

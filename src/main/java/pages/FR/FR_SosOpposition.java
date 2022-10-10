@@ -1,4 +1,4 @@
-package pages.ES;
+package pages.FR;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,30 +7,42 @@ import org.openqa.selenium.support.FindBy;
 
 import base.BasePage;
 
-public class ES_AurumVitalis extends BasePage {
+public class FR_SosOpposition extends BasePage {
 
-	public ES_AurumVitalis(WebDriver driver) {
+	public FR_SosOpposition(WebDriver driver) {
 		super(driver);
 // TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id = "signin_username")
+	@FindBy(id = "username")
 	private WebElement username;
 
-	@FindBy(id = "signin_password")
+	@FindBy(id = "password")
 	private WebElement password;
 
-	@FindBy(css = "button[name='signin_submit']")
+	@FindBy(css = "input[value='Continuer']")
 	private WebElement loginBtn;
 
-	@FindBy(css = ".fs14.loggedin.pull-left > .list-inline-logged > li:nth-of-type(1) > a")
+	@FindBy(id = "SL_place1")
+	private WebElement passcode1;
+
+	@FindBy(id = "SL_place2")
+	private WebElement passcode2;
+
+	@FindBy(id = "SL_place3")
+	private WebElement passcode3;
+
+	@FindBy(css = "input[value='Accéder']")
+	private WebElement enterPasscode;
+
+	@FindBy(css = "li:nth-of-type(1) > h3 > a")
 	private WebElement myAccount;
 
-	@FindBy(css = "input#Email")
+	@FindBy(css = "div:nth-of-type(1) > .prefilled")
 	private WebElement currentEmailAddress;
 
-    @FindBy(css = ".logout > a[title='Log out']")
-    private WebElement logout;
+	@FindBy(css = ".logout > a")
+	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {
 		username.sendKeys(uName);
@@ -45,7 +57,7 @@ public class ES_AurumVitalis extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

@@ -26,7 +26,7 @@ public class ES_Disfrutamaspormenos extends BasePage {
 	@FindBy(css = ".left.sec_links > li:nth-of-type(3) > a")
 	private WebElement myAccount;
 
-	@FindBy(css = "div:nth-of-type(5) > strong")
+	@FindBy(css = "div:nth-of-type(4) > strong")
 	private WebElement currentEmailAddress;
 	
 	@FindBy(css = ".login.mem-login ul a")

@@ -70,7 +70,7 @@ public class SanityTest extends BaseTest {
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			checkBrokenlinks(url);
+			//checkBrokenlinks(url);
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
 
@@ -180,9 +180,10 @@ public class SanityTest extends BaseTest {
 		}else if (applicationName.equals("Carrefour")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-
+			System.out.println("step1 browser URL : "+browserName+" and "+url);
 			ES_Carrefour home = new ES_Carrefour(driver);
 			home.LogIn_Action(username, password);
+			home.selectEnterPassCode();
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
 			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
@@ -196,6 +197,7 @@ public class SanityTest extends BaseTest {
 			FR_SosOpposition home = new FR_SosOpposition(driver);
 			home.LogIn_Action(username, password);
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
+			home.selectEnterPassCode();
 			home.openMyaccount();
 			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
 			Assert.assertEquals(home.getCurrentEmailID(), "4005950298");
@@ -249,16 +251,13 @@ public class SanityTest extends BaseTest {
 			Assert.assertEquals(home.getCurrentEmailID(), username);
 			home.LogoutFromAccount();
 
-		}else if (applicationName.equals("Disfrutamaspormenos (Leisure_Time)")) {
+		}else if (applicationName.equals("Disfrutamaspormenos_Leisure_Time")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-
 			ES_Disfrutamaspormenos home = new ES_Disfrutamaspormenos(driver);
 			home.LogIn_Action(username, password);
-			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
-			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "4004556250");
 			home.LogoutFromAccount();
 
 		}else if (applicationName.equals("Uniqa")) {
@@ -294,7 +293,7 @@ public class SanityTest extends BaseTest {
 			//System.out.println("User loggin into the :" + applicationName + " with Username :" + username);
 			home.openMyaccount();
 			//System.out.println("received form home" + home.getCurrentEmailID() + " from xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "4009622542.0");
 			home.LogoutFromAccount();
 
 		}else if (applicationName.equals("Vitalisbienestar")) {

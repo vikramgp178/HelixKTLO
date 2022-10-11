@@ -1,5 +1,8 @@
 package pages.FR;
 
+import javax.xml.xpath.XPath;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -32,7 +35,7 @@ public class FR_SosOpposition extends BasePage {
 	@FindBy(id = "SL_place3")
 	private WebElement passcode3;
 
-	@FindBy(css = "input[value='Accéder']")
+	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement enterPasscode;
 
 	@FindBy(css = "li:nth-of-type(1) > h3 > a")
@@ -48,6 +51,14 @@ public class FR_SosOpposition extends BasePage {
 		username.sendKeys(uName);
 		password.sendKeys(pwd);
 		loginBtn.click();
+	}
+	
+	public void selectEnterPassCode() throws InterruptedException {
+		selectValueFromDropdown(passcode1, "A");
+		selectValueFromDropdown(passcode2, "A");
+		selectValueFromDropdown(passcode3, "A");
+			
+		enterPasscode.click();
 	}
 
 	public void openMyaccount() {

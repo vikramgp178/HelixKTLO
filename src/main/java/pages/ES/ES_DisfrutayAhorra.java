@@ -1,9 +1,12 @@
 package pages.ES;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.BasePage;
 
@@ -22,6 +25,7 @@ public class ES_DisfrutayAhorra extends BasePage {
 
 	@FindBy(css = "fieldset > input")
 	private WebElement loginBtn;
+	
 
 	@FindBy(css = ".clearfix > li:nth-of-type(3) > a")
 	private WebElement myAccount;
@@ -39,6 +43,8 @@ public class ES_DisfrutayAhorra extends BasePage {
 	}
 
 	public void openMyaccount() {
+		WebDriverWait wait = new WebDriverWait(driver,100);
+		wait.until(ExpectedConditions.visibilityOfElementLocated((By) myAccount));
 		myAccount.click();
 	}
 

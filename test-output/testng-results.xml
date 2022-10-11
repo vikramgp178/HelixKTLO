@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="10" failed="1" ignored="0" total="14" passed="3">
+<testng-results skipped="17" failed="1" ignored="0" total="19" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<a href=Tue_Oct_04_17_27_49_IST_2022.jpg target="_blank">Screenshot link</a>]]>
+      <![CDATA[<a href=Tue_Oct_11_13_31_11_IST_2022.jpg target="_blank">Screenshot link</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<a href=Tue_Oct_04_17_27_49_IST_2022.jpg target="_blank"><img src=Tue_Oct_04_17_27_49_IST_2022.jpg height=200 width=200></a>]]>
+      <![CDATA[<a href=Tue_Oct_11_13_31_11_IST_2022.jpg target="_blank"><img src=Tue_Oct_11_13_31_11_IST_2022.jpg height=200 width=200></a>]]>
     </line>
   </reporter-output>
-  <suite name="Data Driven Test" duration-ms="115851" started-at="2022-10-04T17:25:54 IST" finished-at="2022-10-04T17:27:50 IST">
+  <suite name="Data Driven Test" duration-ms="212572" started-at="2022-10-11T13:27:51 IST" finished-at="2022-10-11T13:31:24 IST">
     <groups>
     </groups>
-    <test name="Sanity Test" duration-ms="115851" started-at="2022-10-04T17:25:54 IST" finished-at="2022-10-04T17:27:50 IST">
+    <test name="Sanity Test" duration-ms="212572" started-at="2022-10-11T13:27:51 IST" finished-at="2022-10-11T13:31:24 IST">
       <class name="testcases.SanityTest">
-        <test-method status="PASS" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="33517" started-at="2022-10-04T17:25:55 IST" data-provider="dp" finished-at="2022-10-04T17:26:28 IST">
+        <test-method status="PASS" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="28194" started-at="2022-10-11T13:27:51 IST" data-provider="dp" finished-at="2022-10-11T13:28:20 IST">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,169 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="812" started-at="2022-10-04T17:26:28 IST" finished-at="2022-10-04T17:26:29 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="685" started-at="2022-10-11T13:28:20 IST" finished-at="2022-10-11T13:28:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2016" started-at="2022-10-04T17:26:29 IST" data-provider="dp" finished-at="2022-10-04T17:26:31 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2006" started-at="2022-10-11T13:28:20 IST" data-provider="dp" finished-at="2022-10-11T13:28:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Carrefour]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://pcpai2-hx.ie1.qa2b.affiniongroup.com/?ref=CARRFSTDFLT0001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[diptibb@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as the run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:181)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:28:22 IST" finished-at="2022-10-11T13:28:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2013" started-at="2022-10-11T13:28:22 IST" data-provider="dp" finished-at="2022-10-11T13:28:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Disfrutamaspormenos_Leisure_Time]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://ltes-hx.ie1.qa2b.affiniongroup.com/?source=lPtTb0tIj/GNbW/U6munzg==]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[virtusa21@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as the run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:255)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:28:24 IST" finished-at="2022-10-11T13:28:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2017" started-at="2022-10-11T13:28:24 IST" data-provider="dp" finished-at="2022-10-11T13:28:26 IST">
           <params>
             <param index="0">
               <value>
@@ -95,8 +253,8 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:74)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:78)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,11 +289,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-04T17:26:31 IST" finished-at="2022-10-04T17:26:31 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:28:26 IST" finished-at="2022-10-11T13:28:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2011" started-at="2022-10-04T17:26:31 IST" data-provider="dp" finished-at="2022-10-04T17:26:33 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2009" started-at="2022-10-11T13:28:26 IST" data-provider="dp" finished-at="2022-10-11T13:28:28 IST">
           <params>
             <param index="0">
               <value>
@@ -174,8 +332,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:87)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:91)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,11 +368,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:33 IST" finished-at="2022-10-04T17:26:33 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:28:28 IST" finished-at="2022-10-11T13:28:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2005" started-at="2022-10-04T17:26:33 IST" data-provider="dp" finished-at="2022-10-04T17:26:35 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2011" started-at="2022-10-11T13:28:28 IST" data-provider="dp" finished-at="2022-10-11T13:28:30 IST">
           <params>
             <param index="0">
               <value>
@@ -253,8 +411,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:101)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:105)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -289,11 +447,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:35 IST" finished-at="2022-10-04T17:26:35 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:28:30 IST" finished-at="2022-10-11T13:28:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2008" started-at="2022-10-04T17:26:35 IST" data-provider="dp" finished-at="2022-10-04T17:26:37 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2005" started-at="2022-10-11T13:28:30 IST" data-provider="dp" finished-at="2022-10-11T13:28:32 IST">
           <params>
             <param index="0">
               <value>
@@ -332,8 +490,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:114)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:118)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -368,11 +526,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:37 IST" finished-at="2022-10-04T17:26:37 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:28:32 IST" finished-at="2022-10-11T13:28:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2012" started-at="2022-10-04T17:26:37 IST" data-provider="dp" finished-at="2022-10-04T17:26:39 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2018" started-at="2022-10-11T13:28:32 IST" data-provider="dp" finished-at="2022-10-11T13:28:34 IST">
           <params>
             <param index="0">
               <value>
@@ -411,8 +569,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:127)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:131)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -447,11 +605,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-04T17:26:39 IST" finished-at="2022-10-04T17:26:39 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:28:34 IST" finished-at="2022-10-11T13:28:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2008" started-at="2022-10-04T17:26:39 IST" data-provider="dp" finished-at="2022-10-04T17:26:41 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2019" started-at="2022-10-11T13:28:34 IST" data-provider="dp" finished-at="2022-10-11T13:28:36 IST">
           <params>
             <param index="0">
               <value>
@@ -490,8 +648,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:140)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:144)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -526,11 +684,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:41 IST" finished-at="2022-10-04T17:26:41 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:28:36 IST" finished-at="2022-10-11T13:28:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2008" started-at="2022-10-04T17:26:41 IST" data-provider="dp" finished-at="2022-10-04T17:26:43 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2005" started-at="2022-10-11T13:28:36 IST" data-provider="dp" finished-at="2022-10-11T13:28:38 IST">
           <params>
             <param index="0">
               <value>
@@ -569,8 +727,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:153)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:157)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -605,11 +763,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-04T17:26:43 IST" finished-at="2022-10-04T17:26:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2015" started-at="2022-10-04T17:26:43 IST" data-provider="dp" finished-at="2022-10-04T17:26:45 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2006" started-at="2022-10-11T13:28:38 IST" data-provider="dp" finished-at="2022-10-11T13:28:40 IST">
           <params>
             <param index="0">
               <value>
@@ -648,8 +802,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:165)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:169)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -684,11 +838,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:45 IST" finished-at="2022-10-04T17:26:45 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:28:38 IST" finished-at="2022-10-11T13:28:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2014" started-at="2022-10-04T17:26:45 IST" data-provider="dp" finished-at="2022-10-04T17:26:47 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:28:40 IST" finished-at="2022-10-11T13:28:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2018" started-at="2022-10-11T13:28:40 IST" data-provider="dp" finished-at="2022-10-11T13:28:43 IST">
           <params>
             <param index="0">
               <value>
@@ -727,8 +885,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:225)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:231)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -763,11 +921,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:47 IST" finished-at="2022-10-04T17:26:47 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:28:43 IST" finished-at="2022-10-11T13:28:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2009" started-at="2022-10-04T17:26:47 IST" data-provider="dp" finished-at="2022-10-04T17:26:49 IST">
+        <test-method status="FAIL" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="148166" started-at="2022-10-11T13:28:43 IST" data-provider="dp" finished-at="2022-10-11T13:31:11 IST">
           <params>
             <param index="0">
               <value>
@@ -796,6 +954,94 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[com.sun.proxy.$Proxy15 cannot be cast to org.openqa.selenium.By]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: com.sun.proxy.$Proxy15 cannot be cast to org.openqa.selenium.By
+at pages.ES.ES_DisfrutayAhorra.openMyaccount(ES_DisfrutayAhorra.java:47)
+at testcases.SanityTest.sanityTest(SanityTest.java:249)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<a href=Tue_Oct_11_13_31_11_IST_2022.jpg target="_blank">Screenshot link</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a href=Tue_Oct_11_13_31_11_IST_2022.jpg target="_blank"><img src=Tue_Oct_11_13_31_11_IST_2022.jpg height=200 width=200></a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="706" started-at="2022-10-11T13:31:11 IST" finished-at="2022-10-11T13:31:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2018" started-at="2022-10-11T13:31:12 IST" data-provider="dp" finished-at="2022-10-11T13:31:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Uniqa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=5pMjpH9vUrCEH3Pzz7h3pw%3d%3d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[virtusa200@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
                 <![CDATA[N]]>
               </value>
             </param>
@@ -806,8 +1052,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:117)
-at testcases.SanityTest.sanityTest(SanityTest.java:237)
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:264)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -842,93 +1088,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-04T17:26:49 IST" finished-at="2022-10-04T17:26:49 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="2006" started-at="2022-10-04T17:26:49 IST" data-provider="dp" finished-at="2022-10-04T17:26:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Disfrutamaspormenos (Leisure_Time)
-
-]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://ltes-hx.ie1.qa2b.affiniongroup.com/?source=lPtTb0tIj/GNbW/U6munzg==]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[virtusa21@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Y]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-04T17:26:52 IST" finished-at="2022-10-04T17:26:52 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="25771" started-at="2022-10-04T17:26:52 IST" data-provider="dp" finished-at="2022-10-04T17:27:17 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Uniqa]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=5pMjpH9vUrCEH3Pzz7h3pw%3d%3d]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[virtusa200@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Y]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="808" started-at="2022-10-04T17:27:17 IST" finished-at="2022-10-04T17:27:18 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@2796aeae]" name="sanityTest" duration-ms="31007" started-at="2022-10-04T17:27:18 IST" data-provider="dp" finished-at="2022-10-04T17:27:49 IST">
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2018" started-at="2022-10-11T13:31:14 IST" data-provider="dp" finished-at="2022-10-11T13:31:16 IST">
           <params>
             <param index="0">
               <value>
@@ -957,23 +1117,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[Y]]>
+                <![CDATA[N]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[expected [40093727919] but found [4009372791]]]>
+              <![CDATA[Skipping the test as the run mode is NO]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [40093727919] but found [4009372791]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at testcases.SanityTest.sanityTest(SanityTest.java:281)
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:276)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1004,20 +1159,328 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
-            <line>
-              <![CDATA[<a href=Tue_Oct_04_17_27_49_IST_2022.jpg target="_blank">Screenshot link</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a href=Tue_Oct_04_17_27_49_IST_2022.jpg target="_blank"><img src=Tue_Oct_04_17_27_49_IST_2022.jpg height=200 width=200></a>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@2796aeae]" name="tearDown" is-config="true" duration-ms="792" started-at="2022-10-04T17:27:50 IST" finished-at="2022-10-04T17:27:50 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:31:14 IST" finished-at="2022-10-11T13:31:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:31:16 IST" finished-at="2022-10-11T13:31:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2020" started-at="2022-10-11T13:31:16 IST" data-provider="dp" finished-at="2022-10-11T13:31:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Datapal MobilComm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=0d45fzIFeiz988jywCckPg%3d%3d]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[CBELRSJ@billing.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as the run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:288)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:31:18 IST" finished-at="2022-10-11T13:31:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2004" started-at="2022-10-11T13:31:18 IST" data-provider="dp" finished-at="2022-10-11T13:31:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vitalisbienestar]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://wellness-hx.ie1.qa2b.affiniongroup.com/Default.aspx?source=fZNkjQrtsg/qZQh1TLGNQA=]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[aoin@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as the run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:300)
+at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:31:20 IST" finished-at="2022-10-11T13:31:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2014" started-at="2022-10-11T13:31:20 IST" data-provider="dp" finished-at="2022-10-11T13:31:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AurumVitalis]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://wellness-hx.ie1.qa2b.affiniongroup.com/?source=SUQU1urlwDBUeX4iX3ARZA%3d%3d ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[aoin@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as the run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:312)
+at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@74589991]" name="sanityTest" duration-ms="2012" started-at="2022-10-11T13:31:22 IST" data-provider="dp" finished-at="2022-10-11T13:31:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sos Opposition]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://pcpai2-hx.ie1.qa2b.affiniongroup.com/?ref=FRQNTHOMEPG0005]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[namesh]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as the run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
+at base.BaseTest.checkRunmode(BaseTest.java:118)
+at testcases.SanityTest.sanityTest(SanityTest.java:194)
+at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T13:31:22 IST" finished-at="2022-10-11T13:31:22 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@74589991]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T13:31:24 IST" finished-at="2022-10-11T13:31:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

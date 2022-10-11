@@ -20,7 +20,7 @@ public class ES_Carrefour extends BasePage {
 	@FindBy(id = "password")
 	private WebElement password;
 
-	@FindBy(css = "input[title='Sign in']")
+	@FindBy(css = "input[name='signin_submit']")
 	private WebElement loginBtn;
 
 	@FindBy(id = "SL_place1")
@@ -50,6 +50,14 @@ public class ES_Carrefour extends BasePage {
 		loginBtn.click();
 	}
 
+	public void selectEnterPassCode() {
+		selectValueFromDropdown(passcode1, "A");
+		selectValueFromDropdown(passcode2, "A");
+		selectValueFromDropdown(passcode3, "A");
+		enterPasscode.click();
+	}
+	
+	
 	public void openMyaccount() {
 		myAccount.click();
 	}
@@ -59,7 +67,7 @@ public class ES_Carrefour extends BasePage {
 	}
 
 	public String getCurrentEmailID() {
-		return currentEmailAddress.getText();
+		return currentEmailAddress.getAttribute("value");
 	}
 
 	public void LogoutFromAccount() {

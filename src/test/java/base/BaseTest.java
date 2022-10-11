@@ -21,6 +21,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
@@ -48,7 +49,7 @@ public class BaseTest {
 
 	public void setUp(String browserName, String url) {
 
-		//System.out.println("Browsername=" + browserName + " and URL :" + url);
+		// System.out.println("Browsername=" + browserName + " and URL :" + url);
 		PropertyConfigurator.configure(".\\src\\test\\resources\\properties\\log4j.properties");
 
 		try {
@@ -87,61 +88,59 @@ public class BaseTest {
 		}
 
 		// DriverManager.setWebDriver(driver);
-		//System.out.println("URL found :" + url);
-		
+		// System.out.println("URL found :" + url);
+
 		try {
 			driver.get(url);
 			log.info("Navigating to the URL : " + url);
 			DbManager.setMysqlDbConnection();
 			log.info("Database connection established");
 			driver.manage().window().maximize();
-		/*	System.out.println("Config.getProperty(\"implicit.wait\") :"+Config.getProperty("implicit.wait"));
-			System.out.println("Config.getProperty(\"explicit.wait\") :"+Config.getProperty("explicit.wait"));*/
+			/*
+			 * System.out.println("Config.getProperty(\"implicit.wait\") :"+Config.
+			 * getProperty("implicit.wait"));
+			 * System.out.println("Config.getProperty(\"explicit.wait\") :"+Config.
+			 * getProperty("explicit.wait"));
+			 */
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(Config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
-			//wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			// wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 			wait = new WebDriverWait(driver, Integer.parseInt(Config.getProperty("explicit.wait")));
 
+		} catch (Exception e) {
+			System.out.println("Site open issue : " + e);
 		}
-		catch(Exception e) {
-			System.out.println("Site open issue : "+e);
-		}
-		
-		
-		
+
 	}
 
 	public void checkRunmode(String runmode) {
 		if (runmode.equals("N")) {
-
 			throw new SkipException("Skipping the test as the run mode is NO");
 		}
 	}
-	
+
 	public String getPageTitle() {
-		//myAccount.click();
-		//googleSearchbtn.click();
+		// myAccount.click();
+		// googleSearchbtn.click();
 		return driver.getTitle();
-		}
-	
-	public void checkSoftAsserEqual(String actual,String expected) {
-		SoftAssert sf= new SoftAssert();
-		sf.assertEquals(actual, expected);
-        sf.assertAll();
-		//driver.quit();
-
-
-		
 	}
-	
+
+	public void checkSoftAsserEqual(String actual, String expected) {
+		SoftAssert sf = new SoftAssert();
+		sf.assertEquals(actual, expected);
+		sf.assertAll();
+		// driver.quit();
+
+	}
+
 	public void SampleMethod() {
 		System.out.println("Test completed");
 	}
 
 	public void checkBrokenlinks(String url) {
 		HttpURLConnection huc = null;
-        int respCode = 200;
-		
+		int respCode = 200;
+
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		Iterator<WebElement> it = links.iterator();
 		while (it.hasNext()) {
@@ -151,14 +150,8 @@ public class BaseTest {
 				System.out.println("URL is either not configured for anchor tag or it is empty");
 				continue;
 			}
-			if (
-					!url.startsWith(url)
-					||!url.contains("mailto")
-					||!url.contains("pinterest")
-					||!url.contains("twitter")
-					||!url.contains("facebook")
-					||!url.contains("plus.google")
-				) {
+			if (!url.startsWith(url) || !url.contains("mailto") || !url.contains("pinterest")
+					|| !url.contains("twitter") || !url.contains("facebook") || !url.contains("plus.google")) {
 				System.out.println("URL belongs to another domain, skipping it.");
 				continue;
 			}

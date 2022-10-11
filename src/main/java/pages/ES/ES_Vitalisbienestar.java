@@ -23,7 +23,7 @@ public class ES_Vitalisbienestar extends BasePage {
 	@FindBy(css = "form[role='login'] > .btn.btn-default")
 	private WebElement loginBtn;
 
-	@FindBy(css = ".list-inline-logged > li:nth-of-type(1) > a")
+	@FindBy(css = ".fs14.loggedin.pull-left > .list-inline-logged > li:nth-of-type(1) > a")
 	private WebElement myAccount;
 
 	@FindBy(css = "input#Email")

@@ -14,10 +14,10 @@ public class DE_DatapalMobilComm extends BasePage {
 // TODO Auto-generated constructor stub
 	}
 
-	@FindBy(id = "signin_username")
+	@FindBy(name = "signin_username")
 	private WebElement username;
 
-	@FindBy(id = "signin_password")
+	@FindBy(name = "signin_password")
 	private WebElement password;
 
 	@FindBy(css = "form[role='form'] > button[name='signin_submit']")
@@ -25,8 +25,12 @@ public class DE_DatapalMobilComm extends BasePage {
 
 	@FindBy(css = ".list-inline.list-unstyled.member.pull-right  .track-event")
 	private WebElement myAccount;
+	
+	@FindBy(css = "div:nth-of-type(4) a")
+	private WebElement ExpandPanel;
+	
 
-	@FindBy(css = "div:nth-of-type(2) > p > strong")
+	@FindBy(css = "div#collapseFour > div > div:nth-of-type(3) > .form-control")
 	private WebElement currentEmailAddress;
 
 	@FindBy(css = ".list-inline.list-unstyled.member.pull-right  a[title='Log out']")
@@ -43,7 +47,10 @@ public class DE_DatapalMobilComm extends BasePage {
 	}
 
 	public String getCurrentEmailID() {
-		return currentEmailAddress.getText();
+		ExpandPanel.click();
+		System.out.println("panel expanded");
+		System.out.println("text captured" +currentEmailAddress.getAttribute("value"));
+		return currentEmailAddress.getAttribute("value");
 	}
 	
 	public void LogoutFromAccount() {

@@ -1,5 +1,11 @@
-INFO    2022-10-04 17:27:20,605 [main] base.BaseTest  - Config Properties loaded !!!
-INFO    2022-10-04 17:27:22,074 [main] base.BaseTest  - Chrome Browser Launched !!!
-INFO    2022-10-04 17:27:29,687 [main] base.BaseTest  - Navigating to the URL : https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=dOWpy%2beeQY3IYNaEhm0ALw%3d%3d
-INFO    2022-10-04 17:27:34,657 [main] base.BaseTest  - Database connection established
-INFO    2022-10-04 17:27:50,817 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:28:45,015 [main] base.BaseTest  - Config Properties loaded !!!
+INFO    2022-10-11 13:28:46,185 [main] base.BaseTest  - Chrome Browser Launched !!!
+INFO    2022-10-11 13:29:01,521 [main] base.BaseTest  - Navigating to the URL : https://ltes-hx.ie1.qa2b.affiniongroup.com/?source=SPAIHOMEPG0002
+INFO    2022-10-11 13:29:05,620 [main] base.BaseTest  - Database connection established
+INFO    2022-10-11 13:31:12,154 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:31:14,176 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:31:16,196 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:31:18,222 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:31:20,233 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:31:22,252 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-11 13:31:24,268 [main] base.BaseTest  - Test Execution completed !!!

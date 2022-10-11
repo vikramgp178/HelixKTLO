@@ -1,4 +1,4 @@
-*.html
-*.json
-*.xml
+*.html,
+*.json,
+*.xml,
 *.txt

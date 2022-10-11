@@ -133,10 +133,6 @@ public class BaseTest {
 
 	}
 
-	public void SampleMethod() {
-		System.out.println("Test completed");
-	}
-
 	public void checkBrokenlinks(String url) {
 		HttpURLConnection huc = null;
 		int respCode = 200;

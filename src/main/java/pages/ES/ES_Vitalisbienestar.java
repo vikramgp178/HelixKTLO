@@ -28,7 +28,7 @@ public class ES_Vitalisbienestar extends BasePage {
 
 	@FindBy(css = "input#Email")
 	private WebElement currentEmailAddress;
-	
+
 	@FindBy(css = ".logout > a[title='Log out']")
 	private WebElement logout;
 
@@ -45,7 +45,7 @@ public class ES_Vitalisbienestar extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

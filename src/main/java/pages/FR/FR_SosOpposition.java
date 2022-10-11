@@ -52,12 +52,12 @@ public class FR_SosOpposition extends BasePage {
 		password.sendKeys(pwd);
 		loginBtn.click();
 	}
-	
+
 	public void selectEnterPassCode() throws InterruptedException {
 		selectValueFromDropdown(passcode1, "A");
 		selectValueFromDropdown(passcode2, "A");
 		selectValueFromDropdown(passcode3, "A");
-			
+
 		enterPasscode.click();
 	}
 

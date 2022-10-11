@@ -27,8 +27,8 @@ public class UK_DatapalFull extends BasePage {
 
 	@FindBy(css = "div#accordion > div:nth-of-type(3) > .form-control")
 	private WebElement currentEmailAddress;
-	
-	@FindBy(css="a[title='Log out'] > .glyphicon.glyphicon-remove")
+
+	@FindBy(css = "a[title='Log out'] > .glyphicon.glyphicon-remove")
 	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {
@@ -44,10 +44,9 @@ public class UK_DatapalFull extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getAttribute("value");
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}
-
 
 }

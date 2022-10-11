@@ -28,7 +28,7 @@ public class DE_Datapal1_5 extends BasePage {
 
 	@FindBy(css = "div#accordion > div:nth-of-type(2) > .form-control")
 	private WebElement currentEmailAddress;
-	
+
 	@FindBy(css = ".col-md-12.hidden-sm.hidden-xs.secondary-nav.secondary-nav__member  a[title='Log out']")
 	private WebElement logout;
 
@@ -45,7 +45,7 @@ public class DE_Datapal1_5 extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getAttribute("value");
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

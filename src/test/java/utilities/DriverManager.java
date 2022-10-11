@@ -18,6 +18,4 @@ public class DriverManager {
 		dr.set(driver);
 	}
 
-
-
 }

@@ -28,8 +28,8 @@ import base.BaseTest;
 import utilities.DriverManager;
 
 public class ExtentListeners implements ITestListener {
-	
-	String logText=null;
+
+	String logText = null;
 
 	/*
 	 * public WebDriver driver;

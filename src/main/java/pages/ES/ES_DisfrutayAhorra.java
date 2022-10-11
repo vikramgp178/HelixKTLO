@@ -25,7 +25,6 @@ public class ES_DisfrutayAhorra extends BasePage {
 
 	@FindBy(css = "fieldset > input")
 	private WebElement loginBtn;
-	
 
 	@FindBy(css = ".clearfix > li:nth-of-type(3) > a")
 	private WebElement myAccount;
@@ -43,7 +42,7 @@ public class ES_DisfrutayAhorra extends BasePage {
 	}
 
 	public void openMyaccount() {
-		WebDriverWait wait = new WebDriverWait(driver,100);
+		WebDriverWait wait = new WebDriverWait(driver, 100);
 		wait.until(ExpectedConditions.visibilityOfElementLocated((By) myAccount));
 		myAccount.click();
 	}

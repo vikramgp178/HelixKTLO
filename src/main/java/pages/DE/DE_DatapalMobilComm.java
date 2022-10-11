@@ -25,17 +25,16 @@ public class DE_DatapalMobilComm extends BasePage {
 
 	@FindBy(css = ".list-inline.list-unstyled.member.pull-right  .track-event")
 	private WebElement myAccount;
-	
+
 	@FindBy(css = "div:nth-of-type(4) a")
 	private WebElement ExpandPanel;
-	
 
 	@FindBy(css = "div#collapseFour > div > div:nth-of-type(3) > .form-control")
 	private WebElement currentEmailAddress;
 
 	@FindBy(css = ".list-inline.list-unstyled.member.pull-right  a[title='Log out']")
 	private WebElement logout;
-	
+
 	public void LogIn_Action(String uName, String pwd) {
 		username.sendKeys(uName);
 		password.sendKeys(pwd);
@@ -49,10 +48,10 @@ public class DE_DatapalMobilComm extends BasePage {
 	public String getCurrentEmailID() {
 		ExpandPanel.click();
 		System.out.println("panel expanded");
-		System.out.println("text captured" +currentEmailAddress.getAttribute("value"));
+		System.out.println("text captured" + currentEmailAddress.getAttribute("value"));
 		return currentEmailAddress.getAttribute("value");
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

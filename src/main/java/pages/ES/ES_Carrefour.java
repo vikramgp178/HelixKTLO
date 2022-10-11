@@ -56,8 +56,7 @@ public class ES_Carrefour extends BasePage {
 		selectValueFromDropdown(passcode3, "A");
 		enterPasscode.click();
 	}
-	
-	
+
 	public void openMyaccount() {
 		myAccount.click();
 	}

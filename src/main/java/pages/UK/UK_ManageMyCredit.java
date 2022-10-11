@@ -9,7 +9,6 @@ import base.BasePage;
 
 public class UK_ManageMyCredit extends BasePage {
 
-		
 	public UK_ManageMyCredit(WebDriver driver) {
 		super(driver);
 		// TODO Auto-generated constructor stub
@@ -32,12 +31,11 @@ public class UK_ManageMyCredit extends BasePage {
 
 	@FindBy(css = "div:nth-of-type(2) > .profileinput > .input.readonly > .readonlytxt")
 	private WebElement currentEmailAddress;
-	
-	
+
 	@FindBy(id = "fancybox-close")
 	private WebElement closeMyProfileBtn;
-	
-	@FindBy(css="a[title='Log out'] > .submitbtn_Logout")
+
+	@FindBy(css = "a[title='Log out'] > .submitbtn_Logout")
 	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {
@@ -49,21 +47,21 @@ public class UK_ManageMyCredit extends BasePage {
 	public void openMyaccount() {
 		myAccount.click();
 		viewAccountProfile.click();
-		
+
 	}
 
 	public String getCurrentEmailID() {
 		driver.switchTo().frame("fancybox-frame");
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void closeMyProfile() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.switchTo().defaultContent();
 		closeMyProfileBtn.click();
-	    
+
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

@@ -31,7 +31,7 @@ public class DE_Uniqa extends BasePage {
 
 	@FindBy(css = "div:nth-of-type(1) a[title='Log out']")
 	private WebElement logout;
-	
+
 	public void LogIn_Action(String uName, String pwd) {
 		username.sendKeys(uName);
 		password.sendKeys(pwd);
@@ -45,10 +45,9 @@ public class DE_Uniqa extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getAttribute("value");
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}
-
 
 }

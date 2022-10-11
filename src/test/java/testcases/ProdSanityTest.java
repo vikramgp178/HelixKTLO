@@ -9,14 +9,14 @@ import base.BaseTest;
 import pages.UK.UK_PrivacyGuard;
 import utilities.DataUtil;
 
-public class ProdSanityTest extends BaseTest{
-	
+public class ProdSanityTest extends BaseTest {
+
 	@Test(dataProviderClass = DataUtil.class, dataProvider = "dp")
-	public void prodSanityTest(String url,String browsername,String title, String runmode) {
-		//System.out.println("browser :"+browsername+" and url is: "+url);
+	public void prodSanityTest(String url, String browsername, String title, String runmode) {
+		// System.out.println("browser :"+browsername+" and url is: "+url);
 		checkRunmode(runmode);
-		setUp(browsername,url);
-		Assert.assertEquals(getPageTitle(),title);
+		setUp(browsername, url);
+		Assert.assertEquals(getPageTitle(), title);
 		tearDown();
 	}
 

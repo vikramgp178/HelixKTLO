@@ -15,57 +15,47 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import base.BasePage;
 
-
 public class ExtentManager {
 
 	private static ExtentReports extent;
-	
-	
-	
 
-	    public static ExtentReports createInstance(String fileName) {
-	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
-	       
-	        
-	        htmlReporter.config().setTheme(Theme.STANDARD);
-	        htmlReporter.config().setDocumentTitle(fileName);
-	        htmlReporter.config().setEncoding("utf-8");
-	        htmlReporter.config().setReportName(fileName);
-	        
-	        extent = new ExtentReports();
-	        extent.attachReporter(htmlReporter);
-	        extent.setSystemInfo("Automation Tester", "QA Team");
-	        extent.setSystemInfo("Organization", "Tenerity");
-	        extent.setSystemInfo("Build no", "V2E-1234");
-	        
-	        
-	        return extent;
-	    }
+	public static ExtentReports createInstance(String fileName) {
+		ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
 
-	    
-		
-	    public static String srcfileName;
-	    	
-	    	
-	    	public static void captureScreenshot() {
+		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setDocumentTitle(fileName);
+		htmlReporter.config().setEncoding("utf-8");
+		htmlReporter.config().setReportName(fileName);
 
-	    		Date d = new Date();
-	    		
-	    		srcfileName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		extent.setSystemInfo("Automation Tester", "QA Team");
+		extent.setSystemInfo("Organization", "Tenerity");
+		extent.setSystemInfo("Build no", "V2E-1234");
 
-	    		File screenshot = ((TakesScreenshot) BasePage.driver).getScreenshotAs(OutputType.FILE);
-	    		try {
-	    			FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "\\target\\reports\\" + srcfileName));
-	    			FileUtils.copyFile(screenshot, new File(System.getProperty("user.dir") + "/target/surefire-reports/html/" + srcfileName));
-	    			
-	    		} catch (IOException e) {
-	    			// TODO Auto-generated catch block
-	    			e.printStackTrace();
-	    		}
+		return extent;
+	}
 
-	    	}
-	    	
-	    	
-	 
+	public static String srcfileName;
+
+	public static void captureScreenshot() {
+
+		Date d = new Date();
+
+		srcfileName = d.toString().replace(":", "_").replace(" ", "_") + ".jpg";
+
+		File screenshot = ((TakesScreenshot) BasePage.driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(screenshot,
+					new File(System.getProperty("user.dir") + "\\target\\reports\\" + srcfileName));
+			FileUtils.copyFile(screenshot,
+					new File(System.getProperty("user.dir") + "/target/surefire-reports/html/" + srcfileName));
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
+
+}

@@ -28,8 +28,8 @@ public class UK_AmericanExpressIdentityDefence extends BasePage {
 
 	@FindBy(css = "div:nth-of-type(3) > .form-span > strong")
 	private WebElement currentEmailAddress;
-	
-	@FindBy(css="div#leftMenu > ul > li:nth-of-type(6) > a")
+
+	@FindBy(css = "div#leftMenu > ul > li:nth-of-type(6) > a")
 	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {
@@ -45,7 +45,7 @@ public class UK_AmericanExpressIdentityDefence extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

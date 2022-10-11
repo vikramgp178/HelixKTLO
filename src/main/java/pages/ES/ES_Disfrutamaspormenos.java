@@ -28,7 +28,7 @@ public class ES_Disfrutamaspormenos extends BasePage {
 
 	@FindBy(css = "div:nth-of-type(4) > strong")
 	private WebElement currentEmailAddress;
-	
+
 	@FindBy(css = ".login.mem-login ul a")
 	private WebElement logout;
 
@@ -45,7 +45,7 @@ public class ES_Disfrutamaspormenos extends BasePage {
 	public String getCurrentEmailID() {
 		return currentEmailAddress.getText();
 	}
-	
+
 	public void LogoutFromAccount() {
 		logout.click();
 	}

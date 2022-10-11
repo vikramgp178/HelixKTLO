@@ -27,8 +27,8 @@ public class UK_MyCreditTracker extends BasePage {
 
 	@FindBy(css = "div:nth-of-type(2) > p > strong")
 	private WebElement currentEmailAddress;
-	
-	@FindBy(css="a[title='Sign out'] > span")
+
+	@FindBy(css = "a[title='Sign out'] > span")
 	private WebElement logout;
 
 	public void LogIn_Action(String uName, String pwd) {

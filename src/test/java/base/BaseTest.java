@@ -184,4 +184,12 @@ public class BaseTest {
 		log.info("Test Execution completed !!!");
 
 	}
+	
+	public String getTitle() {
+		
+	String title = driver.getTitle();
+	return title;
+	
+	}
+	
 }

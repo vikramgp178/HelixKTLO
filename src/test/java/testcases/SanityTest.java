@@ -22,6 +22,8 @@ import pages.ES.ES_Disfrutamaspormenos;
 import pages.ES.ES_DisfrutayAhorra;
 import pages.ES.ES_Ocioneo;
 import pages.ES.ES_Vitalisbienestar;
+import pages.FR.FR_ClubEquipagHorizon;
+import pages.FR.FR_ClubEquipage;
 import pages.FR.FR_SosOpposition;
 import pages.UK.UK_AmericanExpressIdentityDefence;
 import pages.UK.UK_CreditTrackerIdentiy_Vanquis;
@@ -69,6 +71,7 @@ public class SanityTest extends BaseTest {
 			setUp(browserName, url);
 			UK_MyCreditMonitor home = new UK_MyCreditMonitor(driver);
 			home.LogIn_Action(username, password);
+			//1.
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -82,6 +85,7 @@ public class SanityTest extends BaseTest {
 
 			UK_PrivacyGuard home = new UK_PrivacyGuard(driver);
 			home.LogIn_Action(username, password);
+			//2.
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -97,6 +101,8 @@ public class SanityTest extends BaseTest {
 
 			UK_ManageMyCredit home = new UK_ManageMyCredit(driver);
 			home.LogIn_Action(username, password);
+			
+			//3.
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -110,6 +116,7 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("Identity Secure")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
+			//4.
 			/// System.out.println("Privacy Guard UK");
 			UK_IdentitySecure home = new UK_IdentitySecure(driver);
 			home.LogIn_Action(username, password);
@@ -125,6 +132,7 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("(Vanquis) Credit Tracker Identiy")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
+			//5
 			// System.out.println("Privacy Guard UK");
 			UK_CreditTrackerIdentiy_Vanquis home = new UK_CreditTrackerIdentiy_Vanquis(driver);
 			home.LogIn_Action(username, password);
@@ -143,6 +151,7 @@ public class SanityTest extends BaseTest {
 
 			UK_MyCreditTracker home = new UK_MyCreditTracker(driver);
 			home.LogIn_Action(username, password);
+			//6
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -158,6 +167,7 @@ public class SanityTest extends BaseTest {
 
 			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
 			home.LogIn_Action(username, password);
+			//7
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -172,6 +182,7 @@ public class SanityTest extends BaseTest {
 
 			UK_DatapalFull home = new UK_DatapalFull(driver);
 			home.LogIn_Action(username, password);
+			//8
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -186,6 +197,7 @@ public class SanityTest extends BaseTest {
 
 			UK_SentinelGold home = new UK_SentinelGold(driver);
 			home.LogIn_Action(username, password);
+			//9
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -201,6 +213,7 @@ public class SanityTest extends BaseTest {
 			ES_Carrefour home = new ES_Carrefour(driver);
 			home.LogIn_Action(username, password);
 			home.selectEnterPassCode();
+			//10
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -215,6 +228,7 @@ public class SanityTest extends BaseTest {
 
 			FR_SosOpposition home = new FR_SosOpposition(driver);
 			home.LogIn_Action(username, password);
+			//11
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.selectEnterPassCode();
@@ -224,32 +238,34 @@ public class SanityTest extends BaseTest {
 			Assert.assertEquals(home.getCurrentEmailID(), "4005950298");
 			home.LogoutFromAccount();
 
-		} else if (applicationName.equals("Club Horizon (BPSO)")) {
+		} else if (applicationName.equals("Club Equipage Horizon (BPSO)")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			FR_ClubEquipagHorizon home = new FR_ClubEquipagHorizon(driver);
 			home.LogIn_Action(username, password);
+			//12
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
 			// System.out.println("received form home" + home.getCurrentEmailID() + " from
 			// xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "57319155665");
 			home.LogoutFromAccount();
 
 		} else if (applicationName.equals("Club Equipage (BPSO)")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
 
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
+			FR_ClubEquipage home = new FR_ClubEquipage(driver);
 			home.LogIn_Action(username, password);
+			//13
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
 			// System.out.println("received form home" + home.getCurrentEmailID() + " from
 			// xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
+			Assert.assertEquals(home.getCurrentEmailID(), "06101800103");
 			home.LogoutFromAccount();
 
 		} else if (applicationName.equals("Ocioneo")) {
@@ -258,6 +274,7 @@ public class SanityTest extends BaseTest {
 
 			ES_Ocioneo home = new ES_Ocioneo(driver);
 			home.LogIn_Action(username, password);
+			//14
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -272,6 +289,7 @@ public class SanityTest extends BaseTest {
 
 			ES_DisfrutayAhorra home = new ES_DisfrutayAhorra(driver);
 			home.LogIn_Action(username, password);
+			//15
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -281,6 +299,7 @@ public class SanityTest extends BaseTest {
 			home.LogoutFromAccount();
 
 		} else if (applicationName.equals("Disfrutamaspormenos_Leisure_Time")) {
+			//16
 			checkRunmode(runmode);
 			setUp(browserName, url);
 			ES_Disfrutamaspormenos home = new ES_Disfrutamaspormenos(driver);
@@ -295,6 +314,7 @@ public class SanityTest extends BaseTest {
 
 			DE_Uniqa home = new DE_Uniqa(driver);
 			home.LogIn_Action(username, password);
+			//17
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -309,6 +329,7 @@ public class SanityTest extends BaseTest {
 
 			DE_Datapal1_5 home = new DE_Datapal1_5(driver);
 			home.LogIn_Action(username, password);
+			//18
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -323,6 +344,7 @@ public class SanityTest extends BaseTest {
 
 			DE_DatapalMobilComm home = new DE_DatapalMobilComm(driver);
 			home.LogIn_Action(username, password);
+			//19
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -337,6 +359,7 @@ public class SanityTest extends BaseTest {
 
 			ES_Vitalisbienestar home = new ES_Vitalisbienestar(driver);
 			home.LogIn_Action(username, password);
+			//20
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -351,6 +374,7 @@ public class SanityTest extends BaseTest {
 
 			ES_AurumVitalis home = new ES_AurumVitalis(driver);
 			home.LogIn_Action(username, password);
+			//21
 			// System.out.println("User loggin into the :" + applicationName + " with
 			// Username :" + username);
 			home.openMyaccount();
@@ -362,58 +386,25 @@ public class SanityTest extends BaseTest {
 		} else if (applicationName.equals("Consejero legal")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
-			home.LogIn_Action(username, password);
-			// System.out.println("User loggin into the :" + applicationName + " with
-			// Username :" + username);
-			home.openMyaccount();
-			// System.out.println("received form home" + home.getCurrentEmailID() + " from
-			// xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
-			home.LogoutFromAccount();
+			Assert.assertEquals(getTitle(),"Consejero Legal" );
+			
 
 		} else if (applicationName.equals("Miasesor")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
-			home.LogIn_Action(username, password);
-			// System.out.println("User loggin into the :" + applicationName + " with
-			// Username :" + username);
-			home.openMyaccount();
-			// System.out.println("received form home" + home.getCurrentEmailID() + " from
-			// xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
-			home.LogoutFromAccount();
+			Assert.assertEquals(getTitle(),"MiAsesor - Home" );
+			
 
 		} else if (applicationName.equals("Seguro")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
-			home.LogIn_Action(username, password);
-			// System.out.println("User loggin into the :" + applicationName + " with
-			// Username :" + username);
-			home.openMyaccount();
-			// System.out.println("received form home" + home.getCurrentEmailID() + " from
-			// xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
-			home.LogoutFromAccount();
+			Assert.assertEquals(getTitle(),"SeguroyProtegido - Home" );
+			
 
 		} else if (applicationName.equals("Datapal Turkey")) {
 			checkRunmode(runmode);
 			setUp(browserName, url);
-
-			UK_AmericanExpressIdentityDefence home = new UK_AmericanExpressIdentityDefence(driver);
-			home.LogIn_Action(username, password);
-			// System.out.println("User loggin into the :" + applicationName + " with
-			// Username :" + username);
-			home.openMyaccount();
-			// System.out.println("received form home" + home.getCurrentEmailID() + " from
-			// xls " + username);
-			Assert.assertEquals(home.getCurrentEmailID(), username);
-			home.LogoutFromAccount();
+			Assert.assertEquals(getTitle(),"DataPal, internette bilgilerinizi koruman&#305;n ak&#305;ll&#305; yolu... - Datapal Turkey" );
 
 		}
 

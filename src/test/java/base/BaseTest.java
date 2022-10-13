@@ -128,6 +128,7 @@ public class BaseTest {
 	public void checkSoftAsserEqual(String actual, String expected) {
 		SoftAssert sf = new SoftAssert();
 		sf.assertEquals(actual, expected);
+		sf.assertTrue(actual.contains(expected), "Title match");
 		sf.assertAll();
 		// driver.quit();
 

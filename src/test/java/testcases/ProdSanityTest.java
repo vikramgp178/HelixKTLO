@@ -16,7 +16,8 @@ public class ProdSanityTest extends BaseTest {
 		// System.out.println("browser :"+browsername+" and url is: "+url);
 		checkRunmode(runmode);
 		setUp(browsername, url);
-		Assert.assertEquals(getPageTitle(), title);
+		//Assert.assertEquals(getPageTitle(), title);
+		checkSoftAsserEqual(getPageTitle(), title);
 		tearDown();
 	}
 

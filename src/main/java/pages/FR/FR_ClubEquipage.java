@@ -40,7 +40,7 @@ public class FR_ClubEquipage extends BasePage {
 	}
 
 	public String getCurrentEmailID() {
-		return currentEmailAddress.getText();
+		return currentEmailAddress.getAttribute("value");
 	}
 
 	public void LogoutFromAccount() {

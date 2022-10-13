@@ -1,40 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="17" failed="0" ignored="0" total="19" passed="2">
+<testng-results skipped="24" failed="0" ignored="0" total="67" passed="43">
   <reporter-output>
   </reporter-output>
-  <suite name="Data Driven Test" duration-ms="86697" started-at="2022-10-11T18:43:56 IST" finished-at="2022-10-11T18:45:23 IST">
+  <suite name="Data Driven Test" duration-ms="1297960" started-at="2022-10-13T13:12:20 IST" finished-at="2022-10-13T13:33:58 IST">
     <groups>
     </groups>
-    <test name="Sanity Test" duration-ms="86697" started-at="2022-10-11T18:43:56 IST" finished-at="2022-10-11T18:45:23 IST">
-      <class name="testcases.SanityTest">
-        <test-method status="PASS" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="34435" started-at="2022-10-11T18:43:56 IST" data-provider="dp" finished-at="2022-10-11T18:44:31 IST">
+    <test name="Sanity Test" duration-ms="1297960" started-at="2022-10-13T13:12:20 IST" finished-at="2022-10-13T13:33:58 IST">
+      <class name="testcases.PreProd1gTest">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="22107" started-at="2022-10-13T13:12:21 IST" data-provider="dp" finished-at="2022-10-13T13:12:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[My Credit Monitor]]>
+                <![CDATA[https://eplus-hx.ie1.Prod1g.affiniongroup.com/?source=cTxwgofz8b%2f7DI8BfZJ8eQ%3d%3d]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pguk-hx.ie1.qa2b.affiniongroup.com/?source=rqkQ2GTcaKt64j+2BMdssg]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Enjoymore UK]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[dpatel@tavisca.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[Y]]>
               </value>
@@ -42,39 +32,301 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="640" started-at="2022-10-11T18:44:31 IST" finished-at="2022-10-11T18:44:32 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="2" started-at="2022-10-13T13:12:43 IST" finished-at="2022-10-13T13:12:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="16410" started-at="2022-10-11T18:44:32 IST" data-provider="dp" finished-at="2022-10-11T18:44:48 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="3" started-at="2022-10-13T13:12:43 IST" data-provider="dp" finished-at="2022-10-13T13:12:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[AurumVitalis]]>
+                <![CDATA[https://mastercard-hx.ie1.Prod1g.affiniongroup.com/?source=j7h62GliNhKo3mCh1TMIow%3D%3D]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://wellness-hx.ie1.qa2b.affiniongroup.com/?source=SUQU1urlwDBUeX4iX3ARZA%3d%3d ]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Mastercard EWE]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[aoin@gmail.com]]>
+                <![CDATA[N]]>
               </value>
             </param>
-            <param index="4">
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:12:43 IST" finished-at="2022-10-13T13:12:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="2" started-at="2022-10-13T13:12:43 IST" data-provider="dp" finished-at="2022-10-13T13:12:43 IST">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Password1]]>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
               </value>
             </param>
-            <param index="5">
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:12:43 IST" finished-at="2022-10-13T13:12:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="3" started-at="2022-10-13T13:12:43 IST" data-provider="dp" finished-at="2022-10-13T13:12:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:12:43 IST" finished-at="2022-10-13T13:12:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="2" started-at="2022-10-13T13:12:43 IST" data-provider="dp" finished-at="2022-10-13T13:12:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:12:43 IST" finished-at="2022-10-13T13:12:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="25955" started-at="2022-10-13T13:12:43 IST" data-provider="dp" finished-at="2022-10-13T13:13:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=RyFRURvtWDMfB2zmae1yYA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[Y]]>
               </value>
@@ -82,39 +334,239 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="672" started-at="2022-10-11T18:44:48 IST" finished-at="2022-10-11T18:44:49 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:13:09 IST" finished-at="2022-10-13T13:13:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2016" started-at="2022-10-11T18:44:49 IST" data-provider="dp" finished-at="2022-10-11T18:44:51 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="27372" started-at="2022-10-13T13:13:09 IST" data-provider="dp" finished-at="2022-10-13T13:13:36 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Carrefour]]>
+                <![CDATA[https://pguk-hx.ie1.Prod1g.affiniongroup.com/?ref=UKAMXSTDFLT0001]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pcpai2-hx.ie1.qa2b.affiniongroup.com/?ref=CARRFSTDFLT0001]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[American Express Identity Defence Platinum]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[diptibb@gmail.com]]>
+                <![CDATA[Y]]>
               </value>
             </param>
-            <param index="4">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:13:36 IST" finished-at="2022-10-13T13:13:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="15233" started-at="2022-10-13T13:13:36 IST" data-provider="dp" finished-at="2022-10-13T13:13:51 IST">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Password1]]>
+                <![CDATA[https://pguk-hx.ie1.Prod1g.affiniongroup.com/?ref=UKAIHOMEPG0026]]>
               </value>
             </param>
-            <param index="5">
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Manage My Credit]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:13:51 IST" finished-at="2022-10-13T13:13:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="18771" started-at="2022-10-13T13:13:51 IST" data-provider="dp" finished-at="2022-10-13T13:14:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pguk-hx.ie1.Prod1g.affiniongroup.com/?source=rqkQ2GTcaKt64j+2BMdssg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home - MyCreditMonitor]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:14:10 IST" finished-at="2022-10-13T13:14:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="21929" started-at="2022-10-13T13:14:10 IST" data-provider="dp" finished-at="2022-10-13T13:14:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pguk-hx.ie1.Prod1g.affiniongroup.com/?source=jC7IAYwrzsRyfyw34Q8u6w==]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Free credit report, credit score and credit check from PrivacyGuard UK]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:14:32 IST" finished-at="2022-10-13T13:14:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="21134" started-at="2022-10-13T13:14:32 IST" data-provider="dp" finished-at="2022-10-13T13:14:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pguk-hx.ie1.Prod1g.affiniongroup.com/?ref=UKGENSTDFLT0002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home - MyCreditTracker]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:14:53 IST" finished-at="2022-10-13T13:14:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="17433" started-at="2022-10-13T13:14:53 IST" data-provider="dp" finished-at="2022-10-13T13:15:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https:///pguk-hx.ie1.Prod1g.affiniongroup.com/?ref=UKLZ1STDFLT0002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home - IdentitySecure]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:15:11 IST" finished-at="2022-10-13T13:15:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="22356" started-at="2022-10-13T13:15:11 IST" data-provider="dp" finished-at="2022-10-13T13:15:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pguk-hx.ie1.Prod1g.affiniongroup.com/?source=OnSaHXM7BvXQ6mD37Zu3yQ==]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:15:33 IST" finished-at="2022-10-13T13:15:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="2" started-at="2022-10-13T13:15:33 IST" data-provider="dp" finished-at="2022-10-13T13:15:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/Sabadell]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sabadell Test Page]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -122,12 +574,11 @@
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:198)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -161,39 +612,55 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:44:51 IST" finished-at="2022-10-11T18:44:51 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:15:33 IST" finished-at="2022-10-13T13:15:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2006" started-at="2022-10-11T18:44:51 IST" data-provider="dp" finished-at="2022-10-11T18:44:53 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="26601" started-at="2022-10-13T13:15:33 IST" data-provider="dp" finished-at="2022-10-13T13:16:00 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Disfrutamaspormenos_Leisure_Time]]>
+                <![CDATA[https://mastercard-hx.ie1.Prod1g.affiniongroup.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://ltes-hx.ie1.qa2b.affiniongroup.com/?source=lPtTb0tIj/GNbW/U6munzg==]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Accolade Bank Membership Benefits -]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[virtusa21@gmail.com]]>
+                <![CDATA[Y]]>
               </value>
             </param>
-            <param index="4">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="3" started-at="2022-10-13T13:16:00 IST" data-provider="dp" finished-at="2022-10-13T13:16:00 IST">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Password1]]>
+                <![CDATA[https://rbshub-hx.ie1.Prod1g.affiniongroup.com/default.aspx?ref=UKRBSSTDFLT0001]]>
               </value>
             </param>
-            <param index="5">
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[RBS Membership Services - Home]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -201,12 +668,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:284)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -240,39 +706,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T18:44:53 IST" finished-at="2022-10-11T18:44:53 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:00 IST" finished-at="2022-10-13T13:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2006" started-at="2022-10-11T18:44:53 IST" data-provider="dp" finished-at="2022-10-11T18:44:55 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:00 IST" finished-at="2022-10-13T13:16:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:00 IST" data-provider="dp" finished-at="2022-10-13T13:16:00 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Privacy Guard UK]]>
+                <![CDATA[https://rbshub-hx.ie1.Prod1g.affiniongroup.com/default.aspx?ref=UKNWCSTDFLT0001]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pguk-hx.ie1.qa2b.affiniongroup.com/?source=jC7IAYwrzsRyfyw34Q8u6w==]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Natwest Membership Services - Home]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[dipti100]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -280,14 +740,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:80)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -319,39 +777,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T18:44:55 IST" finished-at="2022-10-11T18:44:55 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:00 IST" finished-at="2022-10-13T13:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2012" started-at="2022-10-11T18:44:55 IST" data-provider="dp" finished-at="2022-10-11T18:44:57 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:00 IST" data-provider="dp" finished-at="2022-10-13T13:16:00 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Manage my credit]]>
+                <![CDATA[https://rbshub-hx.ie1.Prod1g.affiniongroup.com/default.aspx/?ref=UKULBSTDFLT0001]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pguk-hx.ie1.qa2b.affiniongroup.com/?ref=UKAIHOMEPG0026]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Ulster Membership Services - Home]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[luke.emery@affinioninternational.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Testing1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -359,14 +807,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:95)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -398,39 +844,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:44:57 IST" finished-at="2022-10-11T18:44:57 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:00 IST" finished-at="2022-10-13T13:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2014" started-at="2022-10-11T18:44:57 IST" data-provider="dp" finished-at="2022-10-11T18:44:59 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:00 IST" data-provider="dp" finished-at="2022-10-13T13:16:00 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Identity Secure]]>
+                <![CDATA[https://rbshub-hx.ie1.Prod1g.affiniongroup.com/default.aspx/?ref=UKULBSTDFLT0011]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https:///pguk-hx.ie1.qa2b.affiniongroup.com/?ref=UKLZ1STDFLT0002]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Ulster Membership Services - Home]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[diptipatel1608@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -438,14 +874,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:111)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -477,39 +911,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:44:59 IST" finished-at="2022-10-11T18:44:59 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:00 IST" finished-at="2022-10-13T13:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2012" started-at="2022-10-11T18:44:59 IST" data-provider="dp" finished-at="2022-10-11T18:45:01 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:00 IST" data-provider="dp" finished-at="2022-10-13T13:16:00 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[(Vanquis) Credit Tracker Identiy]]>
+                <![CDATA[https://rbshub-hx.ie1.Prod1g.affiniongroup.com/?ref=UKULBSTDFLT0004]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pguk-hx.ie1.qa2b.affiniongroup.com/?source=OnSaHXM7BvXQ6mD37Zu3yQ==]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Ulster Membership Services - Home]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[ssltest@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -517,14 +941,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:126)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -556,39 +978,59 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:01 IST" finished-at="2022-10-11T18:45:01 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:16:00 IST" finished-at="2022-10-13T13:16:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2013" started-at="2022-10-11T18:45:01 IST" data-provider="dp" finished-at="2022-10-11T18:45:03 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="19975" started-at="2022-10-13T13:16:00 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[My Credit Tracker]]>
+                <![CDATA[https://pcpai2-hx.ie1.Prod1g.affiniongroup.com/?ref=UKGENHOMEPG0002]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pguk-hx.ie1.qa2b.affiniongroup.com/?ref=UKGENSTDFLT0002]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Sentinel Gold]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[jennystork@gmail.com]]>
+                <![CDATA[Y]]>
               </value>
             </param>
-            <param index="4">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="3" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Password1]]>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=bUEPAfb2UJDVzY6uTKgZAQ%3d%3d]]>
               </value>
             </param>
-            <param index="5">
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[DataPal, internette bilgileriniz]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -596,14 +1038,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:141)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -635,39 +1075,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:03 IST" finished-at="2022-10-11T18:45:03 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2009" started-at="2022-10-11T18:45:03 IST" data-provider="dp" finished-at="2022-10-11T18:45:05 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[American Express Identity Defence]]>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pguk-hx.ie1.qa2b.affiniongroup.com/?ref=UKAMXSTDFLT0001]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[SSO Test Page]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[MRY@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -675,14 +1105,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:156)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -714,39 +1142,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T18:45:05 IST" finished-at="2022-10-11T18:45:05 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2009" started-at="2022-10-11T18:45:05 IST" data-provider="dp" finished-at="2022-10-11T18:45:07 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Datapal Full UK]]>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOTestForm]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=RyFRURvtWDMfB2zmae1yYA]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[SSO Test Page]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[dipti100@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -754,14 +1172,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:170)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -793,39 +1209,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:07 IST" finished-at="2022-10-11T18:45:07 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2011" started-at="2022-10-11T18:45:07 IST" data-provider="dp" finished-at="2022-10-11T18:45:09 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[SENTINELGOLD]]>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pcpai2-hx.ie1.qa2b.affiniongroup.com/?ref=UKGENHOMEPG0002]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[SSO Test Page]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[excapone]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -833,14 +1239,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:184)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -872,39 +1276,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:09 IST" finished-at="2022-10-11T18:45:09 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2014" started-at="2022-10-11T18:45:09 IST" data-provider="dp" finished-at="2022-10-11T18:45:11 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Ocioneo]]>
+                <![CDATA[https://agentportal-hx.ie1.Prod1g.affiniongroup.com/secure/AgentMastercardSSO.aspx]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://ltes-hx.ie1.qa2b.affiniongroup.com/?source=ncNie%2b3qHvccnGjRAX0tQw%3d%3d]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[SSO Test Page]]>
               </value>
             </param>
             <param index="3">
-              <value>
-                <![CDATA[diptifff@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -912,14 +1306,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:256)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -951,432 +1343,1043 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:11 IST" finished-at="2022-10-11T18:45:11 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2003" started-at="2022-10-11T18:45:11 IST" data-provider="dp" finished-at="2022-10-11T18:45:13 IST">
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://agentportal-hx.ie1.Prod1g.affiniongroup.com/secure/AgentMastercardSSO.aspx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="17466" started-at="2022-10-13T13:16:20 IST" data-provider="dp" finished-at="2022-10-13T13:16:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pcpai2-hx.ie1.Prod1g.affiniongroup.com/?ref=ITCF1HOMEPG0001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sentinel Valori Protetti]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:20 IST" finished-at="2022-10-13T13:16:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:16:37 IST" finished-at="2022-10-13T13:16:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="29631" started-at="2022-10-13T13:16:37 IST" data-provider="dp" finished-at="2022-10-13T13:17:07 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://intesa-hx.ie1.Prod1g.affiniongroup.com/ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Servizi di protezione e sicurezza: SempliceSicuro - Intesa]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:17:07 IST" finished-at="2022-10-13T13:17:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="33068" started-at="2022-10-13T13:17:07 IST" data-provider="dp" finished-at="2022-10-13T13:17:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=lFF%2fmD%2bfAFqnieovc3OLrw%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Accueil]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:17:40 IST" finished-at="2022-10-13T13:17:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="13231" started-at="2022-10-13T13:17:40 IST" data-provider="dp" finished-at="2022-10-13T13:17:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pcpai2-hx.ie1.Prod1g.affiniongroup.com/?ref=FRQNTHOMEPG0005]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Page d'accueil - PCP SOS]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:17:53 IST" finished-at="2022-10-13T13:17:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="12059" started-at="2022-10-13T13:17:53 IST" data-provider="dp" finished-at="2022-10-13T13:18:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://pcpai2-hx.ie1.Prod1g.affiniongroup.com/?ref=FRCARCCRFRL0001 ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HaspaJoker Registrierungsportal]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:18:05 IST" finished-at="2022-10-13T13:18:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="12896" started-at="2022-10-13T13:18:05 IST" data-provider="dp" finished-at="2022-10-13T13:18:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://bpsoclub-hx.ie1.Prod1g.affiniongroup.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[BPACA]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:18:18 IST" finished-at="2022-10-13T13:18:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="11662" started-at="2022-10-13T13:18:18 IST" data-provider="dp" finished-at="2022-10-13T13:18:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ltfr-hx.ie1.Prod1g.affiniongroup.com/?source=7o%2b6gfSZZpgx68h7WFl6mQ%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[France Loisirs]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:18:30 IST" finished-at="2022-10-13T13:18:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="15306" started-at="2022-10-13T13:18:30 IST" data-provider="dp" finished-at="2022-10-13T13:18:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://wellness-hx.ie1.Prod1g.affiniongroup.com/?source=SUQU1urlwDBUeX4iX3ARZA%3d%3d ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vitalis Bienestar | Servicio de salud y bienestar]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:18:45 IST" finished-at="2022-10-13T13:18:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="38174" started-at="2022-10-13T13:18:45 IST" data-provider="dp" finished-at="2022-10-13T13:19:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ltes-hx.ie1.Prod1g.affiniongroup.com/?source=lPtTb0tIj/GNbW/U6munzg==]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
               <value>
                 <![CDATA[DisfrutayAhorra]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://ltes-hx.ie1.qa2b.affiniongroup.com/?source=SPAIHOMEPG0002]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
             <param index="3">
               <value>
-                <![CDATA[ jonsyx@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[N]]>
+                <![CDATA[Y]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:270)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="2" started-at="2022-10-11T18:45:13 IST" finished-at="2022-10-11T18:45:13 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:19:23 IST" finished-at="2022-10-13T13:19:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2016" started-at="2022-10-11T18:45:13 IST" data-provider="dp" finished-at="2022-10-11T18:45:15 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="38240" started-at="2022-10-13T13:19:23 IST" data-provider="dp" finished-at="2022-10-13T13:20:01 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Uniqa]]>
+                <![CDATA[https://ltes-hx.ie1.Prod1g.affiniongroup.com/?source=SPAIHOMEPG0002]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=5pMjpH9vUrCEH3Pzz7h3pw%3d%3d]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[DisfrutayAhorra]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[virtusa200@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[N]]>
+                <![CDATA[Y]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:293)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:15 IST" finished-at="2022-10-11T18:45:15 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:20:01 IST" finished-at="2022-10-13T13:20:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2006" started-at="2022-10-11T18:45:15 IST" data-provider="dp" finished-at="2022-10-11T18:45:17 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="29948" started-at="2022-10-13T13:20:01 IST" data-provider="dp" finished-at="2022-10-13T13:20:31 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Datapal 1.5]]>
+                <![CDATA[https://ltes-hx.ie1.Prod1g.affiniongroup.com/?source=ncNie%2b3qHvccnGjRAX0tQw%3d%3d]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=dOWpy%2beeQY3IYNaEhm0ALw%3d%3d]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[jeffry@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[N]]>
+                <![CDATA[Y]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:307)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:17 IST" finished-at="2022-10-11T18:45:17 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:20:31 IST" finished-at="2022-10-13T13:20:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2007" started-at="2022-10-11T18:45:17 IST" data-provider="dp" finished-at="2022-10-11T18:45:19 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="19433" started-at="2022-10-13T13:20:31 IST" data-provider="dp" finished-at="2022-10-13T13:20:51 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Datapal MobilComm]]>
+                <![CDATA[https://pcpai2-hx.ie1.Prod1g.affiniongroup.com/?ref=CARRFSTDFLT0001]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://datapal-hx.ie1.qa2b.affiniongroup.com/?source=0d45fzIFeiz988jywCckPg%3d%3d]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Home - Carrefour Proteccion]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[CBELRSJ@billing.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[N]]>
+                <![CDATA[Y]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:321)
-at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T18:45:19 IST" finished-at="2022-10-11T18:45:19 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:20:51 IST" finished-at="2022-10-13T13:20:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2014" started-at="2022-10-11T18:45:19 IST" data-provider="dp" finished-at="2022-10-11T18:45:21 IST">
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="16073" started-at="2022-10-13T13:20:51 IST" data-provider="dp" finished-at="2022-10-13T13:21:07 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Vitalisbienestar]]>
+                <![CDATA[https://ltes-hx.ie1.Prod1g.affiniongroup.com/?source=TPWyTc5oSMyPwCpeEjQU9g==]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[http://wellness-hx.ie1.qa2b.affiniongroup.com/Default.aspx?source=fZNkjQrtsg/qZQh1TLGNQA=]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Consejero Legal]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[aoin@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Password1]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[N]]>
+                <![CDATA[Y]]>
               </value>
             </param>
           </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:335)
-at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-11T18:45:21 IST" finished-at="2022-10-11T18:45:21 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="sanityTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.SanityTest@7582ff54]" name="sanityTest" duration-ms="2003" started-at="2022-10-11T18:45:21 IST" data-provider="dp" finished-at="2022-10-11T18:45:23 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="23631" started-at="2022-10-13T13:21:07 IST" data-provider="dp" finished-at="2022-10-13T13:21:30 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Sos Opposition]]>
+                <![CDATA[https://ltes-hx.ie1.Prod1g.affiniongroup.com/enroll.aspx?source=RXgv7i7KITiwboWeDGUWwA%3d%3d]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://pcpai2-hx.ie1.qa2b.affiniongroup.com/?ref=FRQNTHOMEPG0005]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[SeguroyProtegido - Home]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[namesh]]>
+                <![CDATA[Y]]>
               </value>
             </param>
-            <param index="4">
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:21:07 IST" finished-at="2022-10-13T13:21:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:21:30 IST" finished-at="2022-10-13T13:21:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="21113" started-at="2022-10-13T13:21:30 IST" data-provider="dp" finished-at="2022-10-13T13:21:52 IST">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[Password1]]>
+                <![CDATA[https://ltes-hx.ie1.Prod1g.affiniongroup.com/secure/enroll.aspx?source=uRxSUR8Ou2DRn1oXJM6wbQ%3d%3d]]>
               </value>
             </param>
-            <param index="5">
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[MiAsesor - Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:21:52 IST" finished-at="2022-10-13T13:21:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="26047" started-at="2022-10-13T13:21:52 IST" data-provider="dp" finished-at="2022-10-13T13:22:18 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://eplus-hx.ie1.Prod1g.affiniongroup.com/?source=M3kO6yafOBc3cXtbo1+z5g==]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jade®Exclusive - Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:22:18 IST" finished-at="2022-10-13T13:22:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="18955" started-at="2022-10-13T13:22:18 IST" data-provider="dp" finished-at="2022-10-13T13:22:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://eplus-hx.ie1.Prod1g.affiniongroup.com/?source=bJU5crAHLsCckNrNRdj1ww%3d%3d ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Enjoymore UK]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:22:37 IST" finished-at="2022-10-13T13:22:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="17583" started-at="2022-10-13T13:22:37 IST" data-provider="dp" finished-at="2022-10-13T13:22:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=0d45fzIFeiz988jywCckPg%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:22:54 IST" finished-at="2022-10-13T13:22:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1790" started-at="2022-10-13T13:22:54 IST" data-provider="dp" finished-at="2022-10-13T13:22:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=dOWpy%2beeQY3IYNaEhm0ALw%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:22:56 IST" finished-at="2022-10-13T13:22:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="19537" started-at="2022-10-13T13:22:56 IST" data-provider="dp" finished-at="2022-10-13T13:23:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/default.aspx?source=6dwSw9iyGThpdlquU6qCRw%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IDPROTECT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:23:16 IST" finished-at="2022-10-13T13:23:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="14306" started-at="2022-10-13T13:23:16 IST" data-provider="dp" finished-at="2022-10-13T13:23:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=ONSHPoNn9ecQDm3v4KnZxA%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IDPROTECT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:23:30 IST" finished-at="2022-10-13T13:23:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="13324" started-at="2022-10-13T13:23:30 IST" data-provider="dp" finished-at="2022-10-13T13:23:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=yF9gTo2aT5yNKoVwDJ%2bKuw%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:23:43 IST" finished-at="2022-10-13T13:23:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="68613" started-at="2022-10-13T13:23:43 IST" data-provider="dp" finished-at="2022-10-13T13:24:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=XYvld8floRDfkYCa7jmu9Q%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IDPROTECT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:24:52 IST" finished-at="2022-10-13T13:24:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="35212" started-at="2022-10-13T13:24:52 IST" data-provider="dp" finished-at="2022-10-13T13:25:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=5pMjpH9vUrCEH3Pzz7h3pw%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IDPROTECT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:25:27 IST" finished-at="2022-10-13T13:25:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="24799" started-at="2022-10-13T13:25:27 IST" data-provider="dp" finished-at="2022-10-13T13:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=6dwSw9iyGThpdlquU6qCRw%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IDPROTECT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="2" started-at="2022-10-13T13:25:52 IST" data-provider="dp" finished-at="2022-10-13T13:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
               <value>
                 <![CDATA[N]]>
               </value>
@@ -1384,13 +2387,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Skipping the test as the run mode is NO]]>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping the test as the run mode is NO
-at base.BaseTest.checkRunmode(BaseTest.java:118)
-at testcases.SanityTest.sanityTest(SanityTest.java:213)
-at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.lang.reflect.Method.invoke(Method.java:498)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -1422,12 +2424,494 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sanityTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SanityTest@7582ff54]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-11T18:45:23 IST" finished-at="2022-10-11T18:45:23 IST">
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:25:52 IST" finished-at="2022-10-13T13:25:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.SanityTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:25:52 IST" finished-at="2022-10-13T13:25:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:25:52 IST" data-provider="dp" finished-at="2022-10-13T13:25:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://agentportal-hx.ie1.Prod1g.affiniongroup.com/secure/AgentMastercardSSO.aspx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:25:52 IST" finished-at="2022-10-13T13:25:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="301948" started-at="2022-10-13T13:25:52 IST" data-provider="dp" finished-at="2022-10-13T13:30:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/secure/default.aspx?source=58Cu8l%2bHdaCZhgx2r52gqg%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[IDPROTECT]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:30:54 IST" finished-at="2022-10-13T13:30:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="30858" started-at="2022-10-13T13:30:54 IST" data-provider="dp" finished-at="2022-10-13T13:31:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://txde-hx.ie1.Prod1g.affiniongroup.com/?source=pNm4E11EalE0VZnBu91hug==]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TravelXtra - Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:31:25 IST" finished-at="2022-10-13T13:31:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="2" started-at="2022-10-13T13:31:25 IST" data-provider="dp" finished-at="2022-10-13T13:31:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/GOLSSOTestApp/SparkasseSSO.aspx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:31:25 IST" finished-at="2022-10-13T13:31:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="19695" started-at="2022-10-13T13:31:25 IST" data-provider="dp" finished-at="2022-10-13T13:31:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://tickets-hx.ie1.Prod1g.affiniongroup.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home | Ticket Shop]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:31:44 IST" finished-at="2022-10-13T13:31:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="2" started-at="2022-10-13T13:31:44 IST" data-provider="dp" finished-at="2022-10-13T13:31:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/SSOTestApp/Home.mvc/SSOAgentTestForm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:31:44 IST" finished-at="2022-10-13T13:31:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="1" started-at="2022-10-13T13:31:44 IST" data-provider="dp" finished-at="2022-10-13T13:31:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://helix-sso.ie1.Prod1g.affiniongroup.com/GOLSSOTestApp/SparkasseSSO.aspx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SSO Test Page]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Test iteration is Skipped as Runmode is :N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Test iteration is Skipped as Runmode is :N
+at testcases.PreProd1gTest.PreProd1gTest(PreProd1gTest.java:27)
+at sun.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="41043" started-at="2022-10-13T13:31:44 IST" data-provider="dp" finished-at="2022-10-13T13:32:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=tlwXVC6INWWf0ZKycrka%2fQ%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:31:44 IST" finished-at="2022-10-13T13:31:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:32:25 IST" finished-at="2022-10-13T13:32:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="39673" started-at="2022-10-13T13:32:25 IST" data-provider="dp" finished-at="2022-10-13T13:33:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://datapal-hx.ie1.Prod1g.affiniongroup.com/?source=55DJhKF8OvtUpOUJR2uJeA%3d%3d  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Home]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="1" started-at="2022-10-13T13:33:05 IST" finished-at="2022-10-13T13:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="27351" started-at="2022-10-13T13:33:05 IST" data-provider="dp" finished-at="2022-10-13T13:33:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ltbr-hx.ie1.Prod1g.affiniongroup.com/?source=cXLW6uIt9FAqMCfQgoKO2w%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Divertz]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="2" started-at="2022-10-13T13:33:32 IST" finished-at="2022-10-13T13:33:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PreProd1gTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="PreProd1gTest" duration-ms="25996" started-at="2022-10-13T13:33:32 IST" data-provider="dp" finished-at="2022-10-13T13:33:58 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://ltbr-hx.ie1.Prod1g.affiniongroup.com/?source=IqkhQq2XV512LlRJPYiXLA%3d%3d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Divertz]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreProd1gTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.PreProd1gTest@26ceffa8]" name="tearDown" is-config="true" duration-ms="0" started-at="2022-10-13T13:33:58 IST" finished-at="2022-10-13T13:33:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.PreProd1gTest -->
     </test> <!-- Sanity Test -->
   </suite> <!-- Data Driven Test -->
 </testng-results>

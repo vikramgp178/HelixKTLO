@@ -10,9 +10,10 @@
 
 	<test name="Sanity Test">
 		<classes>
-			<class name="testcases.SanityTest" />
-			<!-- <class name="testcases.ProdSanityTest" /> <class name="testcases.PreProd1BTest" 
-				/> <class name="testcases.PreProd1gTest" /> -->
+			<class name="testcases.QASanityTest" />
+			<class name="testcases.ProdSanityTest" /> 
+			<class name="testcases.PreProd1BTest" /> 
+			<class name="testcases.PreProd1gTest" />
 
 		</classes>
 	</test> <!-- Test -->

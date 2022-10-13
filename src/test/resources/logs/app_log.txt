@@ -1,22 +1,2 @@
-INFO    2022-10-11 18:44:34,116 [main] base.BaseTest  - Config Properties loaded !!!
-INFO    2022-10-11 18:44:35,276 [main] base.BaseTest  - Chrome Browser Launched !!!
-INFO    2022-10-11 18:44:41,098 [main] base.BaseTest  - Navigating to the URL : https://wellness-hx.ie1.qa2b.affiniongroup.com/?source=SUQU1urlwDBUeX4iX3ARZA%3d%3d 
-INFO    2022-10-11 18:44:45,183 [main] base.BaseTest  - Database connection established
-INFO    2022-10-11 18:44:49,195 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:44:51,221 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:44:53,236 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:44:55,249 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:44:57,266 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:44:59,285 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:01,301 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:03,320 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:05,335 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:07,350 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:09,365 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:11,381 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:13,389 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:15,411 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:17,423 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:19,435 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:21,453 [main] base.BaseTest  - Test Execution completed !!!
-INFO    2022-10-11 18:45:23,461 [main] base.BaseTest  - Test Execution completed !!!
+INFO    2022-10-13 14:50:03,175 [main] base.BaseTest  - Config Properties loaded !!!
+INFO    2022-10-13 14:50:04,424 [main] base.BaseTest  - Chrome Browser Launched !!!
